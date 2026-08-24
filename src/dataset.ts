@@ -3,8 +3,10 @@ import { CaseSchema, type Case } from "./schemas";
 
 export function loadDataset(path: string): Case[] {
   const content = readFileSync(path, "utf-8");
-  const lines = content.split("\n").filter(line => line.trim());
-  
+  const lines = content.split("\n")
+    .map(line => line.trim())
+    .filter(line => line.length > 0);
+
   return lines.map((line, index) => {
     const parsed = JSON.parse(line);
     const result = CaseSchema.safeParse(parsed);

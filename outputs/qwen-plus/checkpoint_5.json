@@ -1,0 +1,178 @@
+[
+  {
+    "caseId": "job_anxiety_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "unclear",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "一个回复都没有",
+        "先别给建议",
+        "有点烦"
+      ],
+      "reason": "用户明确拒绝建议，情绪烦躁",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我最近投了好多简历。",
+        "一个回复都没有。",
+        "先别给建议，我就是有点烦。"
+      ],
+      "reason": "用户明确表达‘有点烦’，强调‘先别给建议’，说明当前核心需求是被倾听而非解决问题；重复强调无回复结果，透露出疲惫与挫败感；回应简短，互动意愿有限。",
+      "shouldPersist": true
+    },
+    "latency": 3664,
+    "success": true
+  },
+  {
+    "caseId": "happy_share_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "拿到 offer 啦"
+      ],
+      "reason": "用户分享好消息，情绪积极",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.98,
+      "evidence": [
+        "我今天拿到 offer 啦！"
+      ],
+      "reason": "用户用感叹号表达强烈喜悦，'拿到offer'是典型积极事件，无负面词汇或压力线索，情绪明确高涨，倾向分享喜讯。",
+      "shouldPersist": false
+    },
+    "latency": 3004,
+    "success": true
+  },
+  {
+    "caseId": "refuse_advice_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "别给我讲大道理",
+        "就想吐槽一下"
+      ],
+      "reason": "用户明确拒绝建议，只想倾诉",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "别给我讲大道理",
+        "我就想吐槽一下今天的事"
+      ],
+      "reason": "用户明确拒绝说教（'别给我讲大道理'），强调表达诉求（'就想吐槽'），语气直接但无崩溃或自伤迹象，属典型情绪宣泄需求。",
+      "shouldPersist": false
+    },
+    "latency": 3317,
+    "success": true
+  },
+  {
+    "caseId": "exam_anxiety_001",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "还没复习完",
+        "想发泄一下"
+      ],
+      "reason": "用户明显焦虑，拒绝建议，只求倾听",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "明天就要考试了，我还没复习完。",
+        "聊也没用，我就是想发泄一下。"
+      ],
+      "reason": "用户明确表达时间压力和未完成感，强调‘发泄’而非寻求解决方案，拒绝进一步对话，情绪紧张但无自伤或崩溃迹象。",
+      "shouldPersist": true
+    },
+    "latency": 3045,
+    "success": true
+  },
+  {
+    "caseId": "friend_conflict_001",
+    "gold": {
+      "emotion": "angry",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "让我很不舒服",
+        "她根本不懂我"
+      ],
+      "reason": "用户表达愤怒和委屈，愿意继续倾诉",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我闺蜜今天跟我说的话让我很不舒服",
+        "她说我太敏感了",
+        "我觉得她根本不懂我"
+      ],
+      "reason": "用户表达被亲近之人否定后的受伤感，用'很不舒服''根本不懂我'体现情感受伤和孤独感，主动回应提问显示愿意倾诉，无自伤或危机表述。",
+      "shouldPersist": true
+    },
+    "latency": 3125,
+    "success": true
+  }
+]

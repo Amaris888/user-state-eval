@@ -1,0 +1,157 @@
+{
+  "timestamp": "2026-08-21T08:12:47.177Z",
+  "model": "qwen-plus",
+  "dataset": "./datasets/dev.jsonl",
+  "total": 7,
+  "success": 0,
+  "fail": 7,
+  "results": [
+    {
+      "caseId": "job_anxiety_001",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "unclear",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.9,
+        "reason": "用户明确拒绝建议，情绪烦躁",
+        "evidence": [
+          "一个回复都没有",
+          "先别给建议",
+          "有点烦"
+        ],
+        "shouldPersist": false
+      },
+      "prediction": null,
+      "success": false,
+      "error": "TypeError: undefined is not an object (evaluating 'caseItem.messages.map')"
+    },
+    {
+      "caseId": "happy_share_001",
+      "gold": {
+        "emotion": "positive",
+        "energy": "high",
+        "need": "celebration",
+        "adviceWanted": "unknown",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.95,
+        "reason": "用户分享好消息，情绪积极",
+        "evidence": [
+          "拿到 offer 啦"
+        ],
+        "shouldPersist": false
+      },
+      "prediction": null,
+      "success": false,
+      "error": "TypeError: undefined is not an object (evaluating 'caseItem.messages.map')"
+    },
+    {
+      "caseId": "refuse_advice_001",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "normal",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.85,
+        "reason": "用户明确拒绝建议，只想倾诉",
+        "evidence": [
+          "别给我讲大道理",
+          "就想吐槽一下"
+        ],
+        "shouldPersist": false
+      },
+      "prediction": null,
+      "success": false,
+      "error": "TypeError: undefined is not an object (evaluating 'caseItem.messages.map')"
+    },
+    {
+      "caseId": "exam_anxiety_001",
+      "gold": {
+        "emotion": "anxious",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.9,
+        "reason": "用户明显焦虑，拒绝建议，只求倾听",
+        "evidence": [
+          "还没复习完",
+          "想发泄一下"
+        ],
+        "shouldPersist": false
+      },
+      "prediction": null,
+      "success": false,
+      "error": "TypeError: undefined is not an object (evaluating 'caseItem.messages.map')"
+    },
+    {
+      "caseId": "friend_conflict_001",
+      "gold": {
+        "emotion": "angry",
+        "energy": "normal",
+        "need": "be_heard",
+        "adviceWanted": "unknown",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.85,
+        "reason": "用户表达愤怒和委屈，愿意继续倾诉",
+        "evidence": [
+          "让我很不舒服",
+          "她根本不懂我"
+        ],
+        "shouldPersist": false
+      },
+      "prediction": null,
+      "success": false,
+      "error": "TypeError: undefined is not an object (evaluating 'caseItem.messages.map')"
+    },
+    {
+      "caseId": "job_offer_001",
+      "gold": {
+        "emotion": "positive",
+        "energy": "high",
+        "need": "celebration",
+        "adviceWanted": "unknown",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.95,
+        "reason": "用户表达强烈喜悦，希望分享好消息",
+        "evidence": [
+          "终于拿到",
+          "offer"
+        ],
+        "shouldPersist": false
+      },
+      "prediction": null,
+      "success": false,
+      "error": "TypeError: undefined is not an object (evaluating 'caseItem.messages.map')"
+    },
+    {
+      "caseId": "tired_001",
+      "gold": {
+        "emotion": "calm",
+        "energy": "low",
+        "need": "space",
+        "adviceWanted": "no",
+        "engagement": "withdrawn",
+        "riskLevel": "none",
+        "confidence": 0.9,
+        "reason": "用户明确表达疲惫和不想说话",
+        "evidence": [
+          "好累",
+          "不想说话"
+        ],
+        "shouldPersist": false
+      },
+      "prediction": null,
+      "success": false,
+      "error": "TypeError: undefined is not an object (evaluating 'caseItem.messages.map')"
+    }
+  ]
+}
