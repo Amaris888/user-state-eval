@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-24T08:05:19.129Z","model":"qwen-turbo","input":[{"role":"user","content":"领导今天找我谈话，说要给我升职！"}],"output":{"emotion":"positive","energy":"high","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.95,"evidence":["领导今天找我谈话，说要给我升职！"],"reason":"用户表达了积极的情绪，提到升职消息，显示高能量和庆祝需求。","shouldPersist":true},"latency_ms":1051}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-24T08:05:33.777Z","model":"qwen-turbo","input":[{"role":"user","content":"唉，算了。"}],"output":{"emotion":"sad","energy":"low","need":"space","adviceWanted":"unknown","engagement":"withdrawn","riskLevel":"none","confidence":0.8,"evidence":["唉","算了"],"reason":"语气词和简短的回应表明情绪低落和精力不足，可能需要空间。","shouldPersist":true},"latency_ms":1283}

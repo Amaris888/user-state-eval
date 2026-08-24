@@ -41,7 +41,7 @@ export const models: Record<string, ModelConfig> = {
 // ========== 调用模型 ==========
 export async function callModel(
   messages: { role: "user" | "assistant"; content: string }[],
-  modelId: string = "qwen-turbo"
+  modelId: string = "doubao-pro"
 ): Promise<string> {
   const config = models[modelId];
   if (!config) {
@@ -135,7 +135,7 @@ if (import.meta.main) {
 
   try {
     const startTime = Date.now();
-    const result = await callModel(testMessages, "qwen-turbo");
+    const result = await callModel(testMessages, "doubao-pro");
     const endTime = Date.now();
     const latency = endTime - startTime;
 
@@ -145,14 +145,14 @@ if (import.meta.main) {
     console.log(`\n⏱️ 延迟: ${latency}ms`);
 
     // 保存日志
-    const logPath = saveLog("qwen-turbo", testMessages, result, latency);
+    const logPath = saveLog("doubao-pro", testMessages, result, latency);
     console.log(`✅ 日志已保存到: ${logPath}`);
 
     // 同时保存到汇总文件
     const summaryPath = join(process.cwd(), "outputs", "all_runs.jsonl");
     const summaryEntry = {
       timestamp: new Date().toISOString(),
-      model: "qwen-turbo",
+      model: "doubao-pro",
       input: testMessages,
       output: parsed,
       latency_ms: latency,

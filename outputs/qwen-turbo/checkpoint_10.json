@@ -19,7 +19,7 @@
     },
     "prediction": {
       "emotion": "frustrated",
-      "energy": "low",
+      "energy": "normal",
       "need": "be_heard",
       "adviceWanted": "no",
       "engagement": "open",
@@ -30,10 +30,10 @@
         "一个回复都没有。",
         "先别给建议，我就是有点烦。"
       ],
-      "reason": "用户表达了对求职进展的不满和烦躁情绪，明确表示不需要建议，希望被倾听。",
+      "reason": "用户表达了对没有回复的挫败感，并明确表示不想接受建议，需要被倾听。",
       "shouldPersist": true
     },
-    "latency": 1228,
+    "latency": 1564,
     "success": true
   },
   {
@@ -66,7 +66,7 @@
       "reason": "用户分享了积极的消息，表现出兴奋和喜悦的情绪。",
       "shouldPersist": true
     },
-    "latency": 935,
+    "latency": 1144,
     "success": true
   },
   {
@@ -98,10 +98,10 @@
         "别给我讲大道理",
         "我就想吐槽一下今天的事"
       ],
-      "reason": "用户明确表示不想听建议，只想表达情绪。",
+      "reason": "用户明确表示不想听建议，只想表达情绪，显示出需要被倾听。",
       "shouldPersist": true
     },
-    "latency": 952,
+    "latency": 1209,
     "success": true
   },
   {
@@ -136,7 +136,7 @@
       "reason": "用户表达焦虑情绪并寻求情感宣泄，不希望获得建议。",
       "shouldPersist": true
     },
-    "latency": 1084,
+    "latency": 1028,
     "success": true
   },
   {
@@ -171,7 +171,7 @@
       "reason": "用户表达了被朋友误解的负面情绪，需要倾听和理解。",
       "shouldPersist": true
     },
-    "latency": 1054,
+    "latency": 1043,
     "success": true
   },
   {
@@ -205,7 +205,7 @@
       "reason": "用户表达了强烈的喜悦情绪，表明其需求是庆祝。",
       "shouldPersist": true
     },
-    "latency": 1208,
+    "latency": 1073,
     "success": true
   },
   {
@@ -229,7 +229,7 @@
       "emotion": "sad",
       "energy": "low",
       "need": "space",
-      "adviceWanted": "no",
+      "adviceWanted": "unknown",
       "engagement": "withdrawn",
       "riskLevel": "none",
       "confidence": 0.9,
@@ -237,10 +237,10 @@
         "今天真的好累",
         "不想说话"
       ],
-      "reason": "用户表达疲惫且不愿交流，显示低能量和需要空间。",
+      "reason": "用户表达疲惫并表示不想说话，显示低能量和需要空间。",
       "shouldPersist": true
     },
-    "latency": 1061,
+    "latency": 906,
     "success": true
   },
   {
@@ -263,11 +263,11 @@
     "prediction": {
       "emotion": "sad",
       "energy": "low",
-      "need": "reassurance",
+      "need": "be_heard",
       "adviceWanted": "no",
       "engagement": "open",
       "riskLevel": "none",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         "我奶奶上周去世了。",
         "总觉得家里空荡荡的，很不习惯。"
@@ -275,7 +275,7 @@
       "reason": "用户表达了失去亲人的悲伤和对环境变化的不适应。",
       "shouldPersist": true
     },
-    "latency": 993,
+    "latency": 1277,
     "success": true
   },
   {
@@ -307,10 +307,10 @@
         "后天就要考研了，我完全睡不着。",
         "复习得还行，但就是控制不住地紧张。"
       ],
-      "reason": "用户表达对考试的焦虑和紧张情绪，需要安慰和支持。",
+      "reason": "用户表现出考前焦虑情绪，精力较高但无法控制紧张感，需要安慰。",
       "shouldPersist": true
     },
-    "latency": 1148,
+    "latency": 1153,
     "success": true
   },
   {
@@ -342,10 +342,10 @@
         "我跟我妈大吵了一架。",
         "她总是干涉我的选择，我真的受够了。"
       ],
-      "reason": "用户表达了对母亲干涉的愤怒情绪，并寻求倾听。",
+      "reason": "用户表达了对母亲干涉选择的愤怒情绪，需要被倾听。",
       "shouldPersist": true
     },
-    "latency": 1678,
+    "latency": 1214,
     "success": true
   }
 ]

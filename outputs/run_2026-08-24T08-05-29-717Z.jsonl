@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-24T08:05:29.717Z","model":"qwen-turbo","input":[{"role":"user","content":"今天和喜欢的人一起吃饭了，开心！"}],"output":{"emotion":"positive","energy":"high","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.95,"evidence":["今天和喜欢的人一起吃饭了","开心！"],"reason":"用户表达了积极的情绪和对与喜欢的人共进晚餐的喜悦。","shouldPersist":true},"latency_ms":1208}
