@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-24T08:02:08.492Z","model":"qwen-turbo","input":[{"role":"user","content":"今天天气不错，心情也挺好的。"}],"output":{"emotion":"positive","energy":"high","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.95,"evidence":["今天天气不错","心情也挺好的"],"reason":"用户表达了积极的情绪和良好的心情，表明当前状态良好。","shouldPersist":true},"latency_ms":941}

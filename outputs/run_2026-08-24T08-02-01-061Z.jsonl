@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-24T08:02:01.061Z","model":"qwen-turbo","input":[{"role":"user","content":"网上的喷子太多了，看得我火大！"}],"output":{"emotion":"angry","energy":"high","need":"be_heard","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["网上的喷子太多了","看得我火大"],"reason":"用户表达了对网络负面评论的愤怒情绪，表明需要被倾听。","shouldPersist":true},"latency_ms":1022}

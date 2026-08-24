@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-24T08:01:40.964Z","model":"qwen-turbo","input":[{"role":"user","content":"我今天拿到 offer 啦！"}],"output":{"emotion":"positive","energy":"high","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.95,"evidence":["我今天拿到 offer 啦！"],"reason":"用户分享了积极的消息，表现出兴奋和喜悦的情绪。","shouldPersist":true},"latency_ms":935}

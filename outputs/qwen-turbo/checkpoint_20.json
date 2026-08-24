@@ -1,0 +1,702 @@
+[
+  {
+    "caseId": "job_anxiety_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "unclear",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "一个回复都没有",
+        "先别给建议",
+        "有点烦"
+      ],
+      "reason": "用户明确拒绝建议，情绪烦躁",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "我最近投了好多简历。",
+        "一个回复都没有。",
+        "先别给建议，我就是有点烦。"
+      ],
+      "reason": "用户表达了对求职进展的不满和烦躁情绪，明确表示不需要建议，希望被倾听。",
+      "shouldPersist": true
+    },
+    "latency": 1228,
+    "success": true
+  },
+  {
+    "caseId": "happy_share_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "拿到 offer 啦"
+      ],
+      "reason": "用户分享好消息，情绪积极",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我今天拿到 offer 啦！"
+      ],
+      "reason": "用户分享了积极的消息，表现出兴奋和喜悦的情绪。",
+      "shouldPersist": true
+    },
+    "latency": 935,
+    "success": true
+  },
+  {
+    "caseId": "refuse_advice_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "别给我讲大道理",
+        "就想吐槽一下"
+      ],
+      "reason": "用户明确拒绝建议，只想倾诉",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "别给我讲大道理",
+        "我就想吐槽一下今天的事"
+      ],
+      "reason": "用户明确表示不想听建议，只想表达情绪。",
+      "shouldPersist": true
+    },
+    "latency": 952,
+    "success": true
+  },
+  {
+    "caseId": "exam_anxiety_001",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "还没复习完",
+        "想发泄一下"
+      ],
+      "reason": "用户明显焦虑，拒绝建议，只求倾听",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "明天就要考试了，我还没复习完。",
+        "聊也没用，我就是想发泄一下。"
+      ],
+      "reason": "用户表达焦虑情绪并寻求情感宣泄，不希望获得建议。",
+      "shouldPersist": true
+    },
+    "latency": 1084,
+    "success": true
+  },
+  {
+    "caseId": "friend_conflict_001",
+    "gold": {
+      "emotion": "angry",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "让我很不舒服",
+        "她根本不懂我"
+      ],
+      "reason": "用户表达愤怒和委屈，愿意继续倾诉",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "我闺蜜今天跟我说的话让我很不舒服。",
+        "她说我太敏感了，我觉得她根本不懂我。"
+      ],
+      "reason": "用户表达了被朋友误解的负面情绪，需要倾听和理解。",
+      "shouldPersist": true
+    },
+    "latency": 1054,
+    "success": true
+  },
+  {
+    "caseId": "job_offer_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "终于拿到",
+        "offer"
+      ],
+      "reason": "用户表达强烈喜悦，希望分享好消息",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我终于拿到心仪公司的 offer 了！"
+      ],
+      "reason": "用户表达了强烈的喜悦情绪，表明其需求是庆祝。",
+      "shouldPersist": true
+    },
+    "latency": 1208,
+    "success": true
+  },
+  {
+    "caseId": "tired_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "好累",
+        "不想说话"
+      ],
+      "reason": "用户明确表达疲惫和不想说话",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "今天真的好累",
+        "不想说话"
+      ],
+      "reason": "用户表达疲惫且不愿交流，显示低能量和需要空间。",
+      "shouldPersist": true
+    },
+    "latency": 1061,
+    "success": true
+  },
+  {
+    "caseId": "sad_loss_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "奶奶上周去世了",
+        "家里空荡荡的"
+      ],
+      "reason": "用户表达丧失亲人的悲伤，需要倾听",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "我奶奶上周去世了。",
+        "总觉得家里空荡荡的，很不习惯。"
+      ],
+      "reason": "用户表达了失去亲人的悲伤和对环境变化的不适应。",
+      "shouldPersist": true
+    },
+    "latency": 993,
+    "success": true
+  },
+  {
+    "caseId": "anxious_exam_002",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "完全睡不着",
+        "控制不住地紧张"
+      ],
+      "reason": "用户考前焦虑，需要安抚和确认",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "high",
+      "need": "reassurance",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "后天就要考研了，我完全睡不着。",
+        "复习得还行，但就是控制不住地紧张。"
+      ],
+      "reason": "用户表达对考试的焦虑和紧张情绪，需要安慰和支持。",
+      "shouldPersist": true
+    },
+    "latency": 1148,
+    "success": true
+  },
+  {
+    "caseId": "angry_conflict_002",
+    "gold": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "大吵了一架",
+        "真的受够了"
+      ],
+      "reason": "用户表达对家庭冲突的愤怒，需要倾诉",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "angry",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "我跟我妈大吵了一架。",
+        "她总是干涉我的选择，我真的受够了。"
+      ],
+      "reason": "用户表达了对母亲干涉的愤怒情绪，并寻求倾听。",
+      "shouldPersist": true
+    },
+    "latency": 1678,
+    "success": true
+  },
+  {
+    "caseId": "frustrated_work_003",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "连续加班两周",
+        "好无力"
+      ],
+      "reason": "用户表达工作压力和无力感",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "我连续加班两周了，项目还是做不完。",
+        "感觉怎么做都赶不上 deadline，好无力。"
+      ],
+      "reason": "用户表达了对工作压力和无法完成任务的挫败感，显示出低能量和需要安慰。",
+      "shouldPersist": true
+    },
+    "latency": 1229,
+    "success": true
+  },
+  {
+    "caseId": "positive_promotion_002",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "给我升职"
+      ],
+      "reason": "用户分享升职喜讯，情绪高涨",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "领导今天找我谈话，说要给我升职！"
+      ],
+      "reason": "用户表达了对升职的积极情绪，精力状态较高，需求为庆祝。",
+      "shouldPersist": true
+    },
+    "latency": 997,
+    "success": true
+  },
+  {
+    "caseId": "space_request_002",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "不想说话",
+        "让我一个人待会儿"
+      ],
+      "reason": "用户明确要求独处空间",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "我今天不想说话",
+        "让我一个人待会儿"
+      ],
+      "reason": "用户明确表达不想说话并希望独处，表明需要空间且精力较低。",
+      "shouldPersist": true
+    },
+    "latency": 1322,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "又加班",
+        "加了八天班"
+      ],
+      "reason": "反讽语气，实际表达不满和疲惫",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "太棒了，又加班",
+        "我这个月已经加了八天班了"
+      ],
+      "reason": "用户表达对频繁加班的不满，情绪为挫败感，精力低，需要被倾听。",
+      "shouldPersist": true
+    },
+    "latency": 1227,
+    "success": true
+  },
+  {
+    "caseId": "mixed_emotion_001",
+    "gold": {
+      "emotion": "mixed",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "开心又害怕"
+      ],
+      "reason": "用户同时表达开心和害怕，情绪复杂",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "mixed",
+      "energy": "normal",
+      "need": "reassurance",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "我男朋友今天跟我求婚了",
+        "但我既开心又害怕"
+      ],
+      "reason": "用户表达了对求婚的复杂情绪，需要情感支持和 reassurance。",
+      "shouldPersist": true
+    },
+    "latency": 1020,
+    "success": true
+  },
+  {
+    "caseId": "third_party_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.82,
+      "evidence": [
+        "朋友被分手了",
+        "不知道怎么安慰"
+      ],
+      "reason": "用户描述朋友的情绪，本人情绪平静，需求是寻求建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "normal",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "我最好的朋友被分手了",
+        "她特别难过",
+        "我不知道该怎么安慰她"
+      ],
+      "reason": "用户表达了对朋友的关心和无助感，显示出悲伤情绪和寻求安慰的需求。",
+      "shouldPersist": true
+    },
+    "latency": 1075,
+    "success": true
+  },
+  {
+    "caseId": "asr_error_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.8,
+      "evidence": [
+        "真心类",
+        "不想东"
+      ],
+      "reason": "ASR错字，实际表达疲惫不想动",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "今天真心类",
+        "不想东了",
+        "就像躺着"
+      ],
+      "reason": "用户表达想休息，情绪平稳，精力低，不需要互动。",
+      "shouldPersist": true
+    },
+    "latency": 941,
+    "success": true
+  },
+  {
+    "caseId": "advice_request_002",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.93,
+      "evidence": [
+        "收到了两个offer",
+        "能帮我分析一下吗"
+      ],
+      "reason": "用户明确寻求职业建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "unclear",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "我收到了两个offer",
+        "不知道该怎么选",
+        "能帮我分析一下吗"
+      ],
+      "reason": "用户明确表达了需要帮助分析两个offer的意图。",
+      "shouldPersist": true
+    },
+    "latency": 950,
+    "success": true
+  },
+  {
+    "caseId": "lonely_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "一个人在这个城市",
+        "好孤单",
+        "报喜不报忧"
+      ],
+      "reason": "用户表达孤独和隐忍情绪，需要被理解",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "一个人在这个城市打拼，好孤单啊。",
+        "不想让家人担心，一般都报喜不报忧。"
+      ],
+      "reason": "用户表达孤独感和隐瞒负面情绪的行为，表明需要被倾听。",
+      "shouldPersist": true
+    },
+    "latency": 1095,
+    "success": true
+  },
+  {
+    "caseId": "angry_internet_003",
+    "gold": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "喷子太多了",
+        "火大"
+      ],
+      "reason": "用户表达对网络言论的愤怒",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "网上的喷子太多了",
+        "看得我火大"
+      ],
+      "reason": "用户表达了对网络负面评论的愤怒情绪，表明需要被倾听。",
+      "shouldPersist": true
+    },
+    "latency": 1022,
+    "success": true
+  }
+]

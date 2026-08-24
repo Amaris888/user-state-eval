@@ -6,7 +6,7 @@ import type { Case } from "./schemas";
 
 // ========== 配置 ==========
 const DATASET_PATH = "./datasets/dev.jsonl";
-const MODEL_ID = "qwen-plus"; // 可换成 qwen-turbo 或 doubao-pro
+const MODEL_ID = "qwen-turbo"; // 可换成 qwen-turbo 或 doubao-pro
 
 // ========== 批量评测 ==========
 async function batchEvaluate(
