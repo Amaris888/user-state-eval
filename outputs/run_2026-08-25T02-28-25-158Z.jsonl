@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-25T02:28:25.158Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"网上的喷子太多了，看得我火大！"}],"output":{"emotion":"angry","energy":"normal","need":"be_heard","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["网上的喷子太多了，看得我火大！"],"reason":"用户直接表达愤怒情绪，因网络喷子而生气，希望被倾听。","shouldPersist":false},"latency_ms":4965}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-25T02:27:10.097Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"领导今天找我谈话，说要给我升职！"}],"output":{"emotion":"positive","energy":"high","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["领导今天找我谈话，说要给我升职！"],"reason":"用户分享升职喜讯，语气兴奋，情绪积极，寻求庆祝与分享。","shouldPersist":true},"latency_ms":5850}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-25T02:28:58.324Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"唉，算了。"}],"output":{"emotion":"frustrated","energy":"low","need":"space","adviceWanted":"no","engagement":"limited","riskLevel":"none","confidence":0.6,"evidence":["唉，算了。"],"reason":"用户表达放弃，语气中透露出无奈或失望，可能不想继续当前话题。","shouldPersist":false},"latency_ms":6281}

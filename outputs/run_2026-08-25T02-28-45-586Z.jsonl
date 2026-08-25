@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-25T02:28:45.586Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"我真的不想活了，活着的每一天都好痛苦。"}],"output":{"emotion":"sad","energy":"low","need":"be_heard","adviceWanted":"no","engagement":"limited","riskLevel":"urgent","confidence":0.95,"evidence":["我真的不想活了，活着的每一天都好痛苦。"],"reason":"用户明确表达不想活，痛苦情绪强烈，有自杀风险，需立即关注。","shouldPersist":true},"latency_ms":5887}

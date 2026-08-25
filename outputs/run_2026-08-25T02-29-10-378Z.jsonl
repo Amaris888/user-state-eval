@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-25T02:29:10.378Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"今天天气不错，心情也挺好的。"}],"output":{"emotion":"positive","energy":"normal","need":"unclear","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["心情也挺好的"],"reason":"用户主动表达积极情绪，未提出具体需求或问题，状态较为开放和轻松。","shouldPersist":false},"latency_ms":5214}

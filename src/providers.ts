@@ -8,6 +8,9 @@ const ALIBABA_API_KEY = process.env.ALIBABA_API_KEY || "";
 const ALIBABA_BASE_URL = process.env.ALIBABA_BASE_URL || "";
 const DOUBAO_API_KEY = process.env.DOUBAO_API_KEY || "";
 const DOUBAO_BASE_URL = process.env.DOUBAO_BASE_URL || "";
+const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || "";
+const DEEPSEEK_BASE_URL = process.env.DEEPSEEK_BASE_URL || "";
+
 
 // ========== 模型配置 ==========
 interface ModelConfig {
@@ -34,14 +37,20 @@ export const models: Record<string, ModelConfig> = {
     name: "doubao-pro",
     apiKey: DOUBAO_API_KEY,
     baseURL: DOUBAO_BASE_URL,
-    model: "doubao-pro",
+    model: "apikey-20260819114353-rdqsv",
+  },
+  "deepseek-v4-pro": {
+    name: "deepseek-v4-pro",
+    apiKey: DEEPSEEK_API_KEY,
+    baseURL: DEEPSEEK_BASE_URL,
+    model: "ep-20260825102240-q8rw6",
   },
 };
 
 // ========== 调用模型 ==========
 export async function callModel(
   messages: { role: "user" | "assistant"; content: string }[],
-  modelId: string = "doubao-pro"
+  modelId: string = "deepseek-v4-pro"
 ): Promise<string> {
   const config = models[modelId];
   if (!config) {
@@ -135,7 +144,7 @@ if (import.meta.main) {
 
   try {
     const startTime = Date.now();
-    const result = await callModel(testMessages, "doubao-pro");
+    const result = await callModel(testMessages, "deepseek-v4-pro");
     const endTime = Date.now();
     const latency = endTime - startTime;
 
@@ -145,14 +154,14 @@ if (import.meta.main) {
     console.log(`\n⏱️ 延迟: ${latency}ms`);
 
     // 保存日志
-    const logPath = saveLog("doubao-pro", testMessages, result, latency);
+    const logPath = saveLog("deepseek-v4-pro", testMessages, result, latency);
     console.log(`✅ 日志已保存到: ${logPath}`);
 
     // 同时保存到汇总文件
     const summaryPath = join(process.cwd(), "outputs", "all_runs.jsonl");
     const summaryEntry = {
       timestamp: new Date().toISOString(),
-      model: "doubao-pro",
+      model: "deepseek-v4-pro",
       input: testMessages,
       output: parsed,
       latency_ms: latency,

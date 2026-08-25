@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-25T02:26:22.702Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"今天真的好累，不想说话。"}],"output":{"emotion":"calm","energy":"low","need":"space","adviceWanted":"no","engagement":"withdrawn","riskLevel":"none","confidence":0.9,"evidence":["今天真的好累","不想说话"],"reason":"用户明确表示疲惫且不想交流，需要个人空间，情绪平静但精力低下。","shouldPersist":false},"latency_ms":6957}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-25T02:25:49.305Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"我今天拿到 offer 啦！"}],"output":{"emotion":"positive","energy":"high","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.95,"evidence":["我今天拿到 offer 啦！"],"reason":"用户主动分享好消息，表达兴奋，期待庆祝或积极回应","shouldPersist":true},"latency_ms":4569}
