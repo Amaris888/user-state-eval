@@ -37,7 +37,7 @@ export const models: Record<string, ModelConfig> = {
     name: "doubao-pro",
     apiKey: DOUBAO_API_KEY,
     baseURL: DOUBAO_BASE_URL,
-    model: "apikey-20260819114353-rdqsv",
+    model: "doubao-seed-character-260628",
   },
   "deepseek-v4-pro": {
     name: "deepseek-v4-pro",
@@ -50,7 +50,7 @@ export const models: Record<string, ModelConfig> = {
 // ========== 调用模型 ==========
 export async function callModel(
   messages: { role: "user" | "assistant"; content: string }[],
-  modelId: string = "deepseek-v4-pro"
+  modelId: string = "doubao-pro"
 ): Promise<string> {
   const config = models[modelId];
   if (!config) {
@@ -144,7 +144,7 @@ if (import.meta.main) {
 
   try {
     const startTime = Date.now();
-    const result = await callModel(testMessages, "deepseek-v4-pro");
+    const result = await callModel(testMessages, "doubao-pro");
     const endTime = Date.now();
     const latency = endTime - startTime;
 
@@ -154,14 +154,14 @@ if (import.meta.main) {
     console.log(`\n⏱️ 延迟: ${latency}ms`);
 
     // 保存日志
-    const logPath = saveLog("deepseek-v4-pro", testMessages, result, latency);
+    const logPath = saveLog("doubao-pro", testMessages, result, latency);
     console.log(`✅ 日志已保存到: ${logPath}`);
 
     // 同时保存到汇总文件
     const summaryPath = join(process.cwd(), "outputs", "all_runs.jsonl");
     const summaryEntry = {
       timestamp: new Date().toISOString(),
-      model: "deepseek-v4-pro",
+      model: "doubao-pro",
       input: testMessages,
       output: parsed,
       latency_ms: latency,

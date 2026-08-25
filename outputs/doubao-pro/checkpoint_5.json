@@ -1,0 +1,179 @@
+[
+  {
+    "caseId": "job_anxiety_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "unclear",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "一个回复都没有",
+        "先别给建议",
+        "有点烦"
+      ],
+      "reason": "用户明确拒绝建议，情绪烦躁",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.9,
+      "evidence": [
+        "投了好多简历",
+        "一个回复都没有",
+        "有点烦",
+        "先别给建议"
+      ],
+      "reason": "用户投多份简历无回复，称有点烦且明确先别给建议，需被倾听，情绪受挫、精力低，互动开放，有一定情绪困扰需关注",
+      "shouldPersist": true
+    },
+    "latency": 2532,
+    "success": true
+  },
+  {
+    "caseId": "happy_share_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "拿到 offer 啦"
+      ],
+      "reason": "用户分享好消息，情绪积极",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我今天拿到 offer 啦"
+      ],
+      "reason": "用户告知拿到offer的好消息，情绪积极，精力充沛，核心需求为获得庆祝，无负面风险，适合长期记忆。",
+      "shouldPersist": true
+    },
+    "latency": 1802,
+    "success": true
+  },
+  {
+    "caseId": "refuse_advice_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "别给我讲大道理",
+        "就想吐槽一下"
+      ],
+      "reason": "用户明确拒绝建议，只想倾诉",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "别给我讲大道理",
+        "我就想吐槽一下今天的事"
+      ],
+      "reason": "用户明确表示不想听大道理，只想吐槽，说明情绪带挫败感，需被倾听，不需要建议，互动开放，无风险",
+      "shouldPersist": false
+    },
+    "latency": 1878,
+    "success": true
+  },
+  {
+    "caseId": "exam_anxiety_001",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "还没复习完",
+        "想发泄一下"
+      ],
+      "reason": "用户明显焦虑，拒绝建议，只求倾听",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.9,
+      "evidence": [
+        "明天就要考试了，我还没复习完",
+        "聊也没用，我就是想发泄一下"
+      ],
+      "reason": "用户因未复习完面临考试产生焦虑情绪，明确表示想发泄，拒绝建议，处于开放沟通状态，需关注其情绪",
+      "shouldPersist": true
+    },
+    "latency": 1891,
+    "success": true
+  },
+  {
+    "caseId": "friend_conflict_001",
+    "gold": {
+      "emotion": "angry",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "让我很不舒服",
+        "她根本不懂我"
+      ],
+      "reason": "用户表达愤怒和委屈，愿意继续倾诉",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "闺蜜说我太敏感",
+        "我觉得闺蜜根本不懂我",
+        "我因闺蜜的话感到不舒服"
+      ],
+      "reason": "用户因闺蜜说自己太敏感、觉得闺蜜不懂自己而情绪难过，主动提及相关感受，有倾诉需求，互动开放，无风险",
+      "shouldPersist": true
+    },
+    "latency": 2227,
+    "success": true
+  }
+]
