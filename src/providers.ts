@@ -2,6 +2,7 @@ import OpenAI from "openai";
 import { writeFileSync, mkdirSync } from "fs";
 import { join } from "path";
 import type { Case } from "./schemas";
+import { MODEL_ID } from "./batch_eval";
 
 // ========== 配置 ==========
 const ALIBABA_API_KEY = process.env.ALIBABA_API_KEY || "";
@@ -50,7 +51,7 @@ export const models: Record<string, ModelConfig> = {
 // ========== 调用模型 ==========
 export async function callModel(
   messages: { role: "user" | "assistant"; content: string }[],
-  modelId: string = "doubao-pro"
+  modelId: string = MODEL_ID
 ): Promise<string> {
   const config = models[modelId];
   if (!config) {
@@ -62,7 +63,7 @@ export async function callModel(
     baseURL: config.baseURL,
   });
 
-  const systemPrompt = `你是一个用户状态理解专家。请根据对话内容，判断用户当前的状态。
+  const systemPrompt = `你是一个敏锐的用户状态理解专家。请根据对话内容，判断用户当前的状态。
 
 你需要输出以下字段（JSON格式）：
 - emotion: 情绪状态 (positive/calm/sad/anxious/angry/frustrated/mixed/unclear)
@@ -144,7 +145,7 @@ if (import.meta.main) {
 
   try {
     const startTime = Date.now();
-    const result = await callModel(testMessages, "doubao-pro");
+    const result = await callModel(testMessages, MODEL_ID);
     const endTime = Date.now();
     const latency = endTime - startTime;
 
@@ -154,14 +155,14 @@ if (import.meta.main) {
     console.log(`\n⏱️ 延迟: ${latency}ms`);
 
     // 保存日志
-    const logPath = saveLog("doubao-pro", testMessages, result, latency);
+    const logPath = saveLog(MODEL_ID, testMessages, result, latency);
     console.log(`✅ 日志已保存到: ${logPath}`);
 
     // 同时保存到汇总文件
     const summaryPath = join(process.cwd(), "outputs", "all_runs.jsonl");
     const summaryEntry = {
       timestamp: new Date().toISOString(),
-      model: "doubao-pro",
+      model: MODEL_ID,
       input: testMessages,
       output: parsed,
       latency_ms: latency,

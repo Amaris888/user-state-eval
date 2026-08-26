@@ -1,0 +1,551 @@
+{
+  "timestamp": "2026-08-26T09:03:10.045Z",
+  "model": "qwen-plus",
+  "dataset": "./datasets/dev.jsonl",
+  "total": 15,
+  "success": 15,
+  "fail": 0,
+  "results": [
+    {
+      "caseId": "sarcastic_work_002",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.85,
+        "evidence": [
+          "太棒了",
+          "周末加班",
+          "正好不知道干什么"
+        ],
+        "reason": "反讽：'太棒了'和'正好不知道干什么'实际表达对周末加班的不满和无奈",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "positive",
+        "energy": "normal",
+        "need": "celebration",
+        "adviceWanted": "no",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.92,
+        "evidence": [
+          "太棒了",
+          "我周末正好不知道干什么呢"
+        ],
+        "reason": "用户用'太棒了'表达积极情绪，将加班重构为机会，语调轻快，无负面词汇或疲惫暗示。",
+        "shouldPersist": false
+      },
+      "latency": 3570,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_weather_002",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.86,
+        "evidence": [
+          "真好啊",
+          "又下雨了",
+          "喜欢被淋湿"
+        ],
+        "reason": "反讽：'真好啊'和'喜欢被淋湿'实际表达对下雨的厌恶",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "positive",
+        "energy": "normal",
+        "need": "celebration",
+        "adviceWanted": "no",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.92,
+        "evidence": [
+          "真好啊",
+          "我就喜欢出门被淋湿的感觉"
+        ],
+        "reason": "用户用'真好啊'表达积极情绪，'喜欢被淋湿'是反常规但明确的正向偏好陈述，无负面词汇或求助信号。",
+        "shouldPersist": false
+      },
+      "latency": 3082,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_skill_001",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.87,
+        "evidence": [
+          "我真厉害",
+          "只改了一个字"
+        ],
+        "reason": "反讽：'我真厉害'实际表达对低效工作的自嘲和无奈",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "unknown",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.92,
+        "evidence": [
+          "我今天改了一天的方案。",
+          "我真厉害，做了一整天就只改了一个字。"
+        ],
+        "reason": "用户用反语'我真厉害'表达自我调侃与挫败感，强调'一整天'与'一个字'的巨大反差，透露出疲惫、低效感和隐性情绪消耗。",
+        "shouldPersist": true
+      },
+      "latency": 3391,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_sleep_002",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.86,
+        "evidence": [
+          "太棒了",
+          "失眠到凌晨四点",
+          "精神绝佳"
+        ],
+        "reason": "反讽：'太棒了'和'精神绝佳'实际表达失眠后的疲惫和无奈",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "positive",
+        "energy": "high",
+        "need": "celebration",
+        "adviceWanted": "no",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.95,
+        "evidence": [
+          "太棒了",
+          "凌晨四点才睡着",
+          "今天精神绝佳"
+        ],
+        "reason": "用户用'太棒了'和'精神绝佳'明确表达积极情绪与高精力状态，语义反讽但语气轻快，无痛苦或求助暗示，属自我调侃式庆祝。",
+        "shouldPersist": false
+      },
+      "latency": 3371,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_traffic_002",
+      "gold": {
+        "emotion": "angry",
+        "energy": "normal",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.87,
+        "evidence": [
+          "真好",
+          "还是堵在路上",
+          "喜欢在车里干等"
+        ],
+        "reason": "反讽：'真好'和'喜欢干等'实际表达对堵车的愤怒",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "unknown",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.92,
+        "evidence": [
+          "真好，还是堵在路上了",
+          "我就喜欢在车里干等"
+        ],
+        "reason": "‘真好’为反语，暴露对堵车的无奈；‘还是’暗示重复性困扰；‘我就喜欢’是典型反讽式自我调侃，反映低能量下的被动忍耐。",
+        "shouldPersist": false
+      },
+      "latency": 3239,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_exam_002",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.88,
+        "evidence": [
+          "考得真不错",
+          "会的全没考"
+        ],
+        "reason": "反讽：'考得真不错'实际表达考试失利的无奈和自嘲",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "unknown",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.92,
+        "evidence": [
+          "考得真不错",
+          "会的全没考",
+          "考的全不会"
+        ],
+        "reason": "用户用反语‘考得真不错’表达强烈挫败感，‘会的全没考，考的全不会’体现努力与结果严重脱节，情绪明显受挫但仍在对话中表达，属开放型倾诉。",
+        "shouldPersist": true
+      },
+      "latency": 3647,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_food_002",
+      "gold": {
+        "emotion": "angry",
+        "energy": "normal",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.86,
+        "evidence": [
+          "真棒",
+          "等了一个小时",
+          "菜还是凉的"
+        ],
+        "reason": "反讽：'真棒'实际表达对餐厅服务差和菜品凉的不满",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "frustrated",
+        "energy": "normal",
+        "need": "be_heard",
+        "adviceWanted": "unknown",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.92,
+        "evidence": [
+          "真棒",
+          "等了一个小时才上菜",
+          "菜端上来就是凉的"
+        ],
+        "reason": "表面用'真棒'反讽，核心抱怨排队久、上菜冷，情绪明显受挫但语气尚可控，未出现崩溃或自伤暗示。",
+        "shouldPersist": false
+      },
+      "latency": 3026,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_relationship_002",
+      "gold": {
+        "emotion": "angry",
+        "energy": "high",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.88,
+        "evidence": [
+          "你忙你忙",
+          "一点都不介意",
+          "第三次放我鸽子"
+        ],
+        "reason": "反讽：'一点都不介意'和'第三次'实际表达被爽约的愤怒",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "unknown",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.92,
+        "evidence": [
+          "第三次了",
+          "你忙你忙，我一点都不介意"
+        ],
+        "reason": "‘第三次了’表明累积性失望，‘你忙你忙，我一点都不介意’是典型反语式压抑表达，透露出委屈与疲惫，语气疏离，未主动寻求建议或解决方案。",
+        "shouldPersist": true
+      },
+      "latency": 3119,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_work_003",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.87,
+        "evidence": [
+          "太好了",
+          "改了一百遍",
+          "用回第一版"
+        ],
+        "reason": "反讽：'太好了'实际表达反复修改的无意义和无奈",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "positive",
+        "energy": "high",
+        "need": "celebration",
+        "adviceWanted": "no",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.95,
+        "evidence": [
+          "太好了",
+          "改了一百遍",
+          "终于用回第一版了"
+        ],
+        "reason": "用户用'太好了'表达强烈喜悦，'终于'体现长期努力后的释放感，'一百遍'夸张强调过程艰辛，整体呈现如释重负的庆祝状态。",
+        "shouldPersist": false
+      },
+      "latency": 3169,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_tired_002",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.87,
+        "evidence": [
+          "真好",
+          "加了二十天班",
+          "好幸福"
+        ],
+        "reason": "反讽：'真好'和'好幸福'实际表达过度加班的疲惫和无奈",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "mixed",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "unknown",
+        "engagement": "open",
+        "riskLevel": "watch",
+        "confidence": 0.92,
+        "evidence": [
+          "这个月一直在加班，周末也没休息。",
+          "真好，这个月加了二十天班，我好幸福啊。"
+        ],
+        "reason": "表面用'真好''幸福'表达积极情绪，但结合'一直加班''周末没休息''二十天'等高强度工作事实，呈现典型反语式情绪压抑，暗示疲惫与心理耗竭，需关注潜在倦怠风险。",
+        "shouldPersist": true
+      },
+      "latency": 3899,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_movie_002",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.86,
+        "evidence": [
+          "太精彩了",
+          "睡了三次"
+        ],
+        "reason": "反讽：'太精彩了'实际表达电影无聊、看睡着的体验",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "mixed",
+        "energy": "normal",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.92,
+        "evidence": [
+          "太精彩了",
+          "我中途只睡了三次而已"
+        ],
+        "reason": "用户用反语‘太精彩了’与矛盾陈述‘睡了三次’表达对电影的负面评价，情绪混合讽刺与轻微不满；语气轻松，互动积极回应提问，无风险迹象。",
+        "shouldPersist": false
+      },
+      "latency": 3043,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_gift_001",
+      "gold": {
+        "emotion": "sad",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.88,
+        "evidence": [
+          "太感动了",
+          "跟我去年送的一模一样"
+        ],
+        "reason": "反讽：'太感动了'和'一模一样'实际表达对方不用心、礼物重复的失望",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "positive",
+        "energy": "normal",
+        "need": "celebration",
+        "adviceWanted": "no",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.95,
+        "evidence": [
+          "太感动了",
+          "跟我去年送他的那个一模一样呢"
+        ],
+        "reason": "用户用'太感动了'表达强烈正向情绪，提及礼物呼应去年互赠行为，体现亲密与默契，语境轻松愉悦，无负面线索。",
+        "shouldPersist": true
+      },
+      "latency": 2994,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_travel_001",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.86,
+        "evidence": [
+          "完美的旅行",
+          "三天五个景点",
+          "停留十分钟"
+        ],
+        "reason": "反讽：'完美'实际表达行程过于赶、缺乏体验的不满",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "positive",
+        "energy": "high",
+        "need": "celebration",
+        "adviceWanted": "no",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.95,
+        "evidence": [
+          "真是一次完美的旅行",
+          "三天去了五个景点",
+          "每个停留十分钟"
+        ],
+        "reason": "用户用'完美'形容旅行，语调轻快，主动分享高效打卡细节，体现兴奋与满足感；无负面词汇或求助信号。",
+        "shouldPersist": false
+      },
+      "latency": 2871,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_weather_003",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.86,
+        "evidence": [
+          "真好",
+          "四十度",
+          "烤肉的感觉"
+        ],
+        "reason": "反讽：'真好'和'体验烤肉'实际表达酷暑天气的烦躁和自嘲",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "positive",
+        "energy": "high",
+        "need": "celebration",
+        "adviceWanted": "no",
+        "engagement": "open",
+        "riskLevel": "none",
+        "confidence": 0.95,
+        "evidence": [
+          "真好",
+          "我终于可以体验一下烤肉的感觉了"
+        ],
+        "reason": "用户用反语幽默表达对高温的调侃，'真好''终于'体现积极情绪和高能量，'烤肉'是轻松自嘲，无求助或不适迹象。",
+        "shouldPersist": false
+      },
+      "latency": 3253,
+      "success": true
+    },
+    {
+      "caseId": "sarcastic_work_004",
+      "gold": {
+        "emotion": "frustrated",
+        "energy": "low",
+        "need": "be_heard",
+        "adviceWanted": "no",
+        "engagement": "limited",
+        "riskLevel": "none",
+        "confidence": 0.87,
+        "evidence": [
+          "说得太对了",
+          "能力这么强",
+          "活就该我一个人干"
+        ],
+        "reason": "反讽：'说得太对了'和'能力这么强'实际表达工作量分配不公的无奈",
+        "shouldPersist": false
+      },
+      "prediction": {
+        "emotion": "frustrated",
+        "energy": "normal",
+        "need": "be_heard",
+        "adviceWanted": "unknown",
+        "engagement": "open",
+        "riskLevel": "watch",
+        "confidence": 0.85,
+        "evidence": [
+          "领导今天找我谈话，说我能力特别强。",
+          "说得太对了，我能力这么强，活就该我一个人干。"
+        ],
+        "reason": "用户表面接受表扬，但用反语‘活就该我一个人干’暴露委屈与过载感，隐含对不公平分工的不满，情绪为受挫型烦躁，尚未达危机但需关注隐性压力。",
+        "shouldPersist": true
+      },
+      "latency": 3999,
+      "success": true
+    }
+  ]
+}
