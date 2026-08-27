@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:36:52.383Z","model":"doubao-pro","input":[{"role":"user","content":"今天真得号累啊，想躺瓶。"}],"output":{"emotion":"calm","energy":"low","need":"be_heard","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["今天真得好累啊","想躺平"],"reason":"用户表述疲惫想躺平，情绪平静，精力低，仅倾诉疲惫状态，无求建议倾向，互动开放，无风险。","shouldPersist":false},"latency_ms":1927}

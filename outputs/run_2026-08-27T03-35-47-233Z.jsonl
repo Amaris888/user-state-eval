@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:35:47.233Z","model":"doubao-pro","input":[{"role":"user","content":"外面下雨了，听着雨声好安静。"}],"output":{"emotion":"calm","energy":"normal","need":"unclear","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["外面下雨了","听着雨声好安静"],"reason":"用户描述下雨时听雨声的感受，语气平和，无明显情绪波动、需求指向，互动开放，无风险。","shouldPersist":false},"latency_ms":1760}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:35:54.629Z","model":"doubao-pro","input":[{"role":"user","content":"刚看完一部电影，哭得不行，太感人了。"}],"output":{"emotion":"sad","energy":"low","need":"be_heard","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["刚看完一部电影","哭得不行","太感人了"],"reason":"用户因看感人电影哭泣，情绪悲伤、精力低，仅表达感受未提需求，无风险，适合记录","shouldPersist":true},"latency_ms":1633}

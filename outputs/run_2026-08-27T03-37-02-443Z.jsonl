@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:37:02.443Z","model":"doubao-pro","input":[{"role":"user","content":"我碰友今天跟我说要般走了。"}],"output":{"emotion":"sad","energy":"low","need":"be_heard","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.8,"evidence":["朋友今天说要搬走了"],"reason":"用户告知朋友要搬走的消息，未提其他需求，推测因朋友搬走产生难过情绪，希望被倾听，暂无法判断是否要建议","shouldPersist":true},"latency_ms":1831}

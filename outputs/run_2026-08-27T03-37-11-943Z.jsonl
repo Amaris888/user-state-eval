@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:37:11.943Z","model":"doubao-pro","input":[{"role":"user","content":"挖！竟然真的重了奖！"}],"output":{"emotion":"positive","energy":"high","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.95,"evidence":["挖！","竟然真的重了奖"],"reason":"用户表达中奖的惊喜，情绪积极，精力充沛，核心需求是庆祝中奖，无负面风险，互动开放，无需建议。","shouldPersist":false},"latency_ms":1953}

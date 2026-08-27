@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:35:32.065Z","model":"doubao-pro","input":[{"role":"user","content":"唉，算了。"}],"output":{"emotion":"sad","energy":"low","need":"be_heard","adviceWanted":"unknown","engagement":"limited","riskLevel":"watch","confidence":0.7,"evidence":["唉","算了"],"reason":"用户仅说“唉，算了”，情绪低落，精力不足，未明确需求，互动意愿有限，暂未显明确风险，需关注状态变化","shouldPersist":false},"latency_ms":2559}

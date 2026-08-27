@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:37:06.016Z","model":"doubao-pro","input":[{"role":"user","content":"诶？我刚想硕什么来着？"}],"output":{"emotion":"unclear","energy":"unclear","need":"unclear","adviceWanted":"unknown","engagement":"unclear","riskLevel":"none","confidence":0.9,"evidence":["我刚想硕什么来着？"],"reason":"用户仅说出忘记自己原本想说的内容，未体现情绪、精力状态，需求不明确，无风险表现。","shouldPersist":false},"latency_ms":1767}
