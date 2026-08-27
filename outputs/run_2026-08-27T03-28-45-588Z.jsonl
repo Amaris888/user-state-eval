@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:45.588Z","model":"qwen-turbo","input":[{"role":"user","content":"领导又给我压务了，我真的快崩馈了。"}],"output":{"emotion":"frustrated","energy":"low","need":"reassurance","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["领导又给我压务了","我真的快崩馈了"],"reason":"用户表达了对工作压力的不满和情绪崩溃的倾向。","shouldPersist":true},"latency_ms":969}

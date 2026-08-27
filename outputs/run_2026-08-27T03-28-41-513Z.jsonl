@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:41.513Z","model":"qwen-turbo","input":[{"role":"user","content":"明天就考室了，我还没负习完。"}],"output":{"emotion":"anxious","energy":"high","need":"advice","adviceWanted":"yes","engagement":"open","riskLevel":"watch","confidence":0.9,"evidence":["明天就考室了","我还没负习完"],"reason":"用户表现出对即将到来的考试的焦虑，需要建议来应对未完成的学习任务。","shouldPersist":true},"latency_ms":977}

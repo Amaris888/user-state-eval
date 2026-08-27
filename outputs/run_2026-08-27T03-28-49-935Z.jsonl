@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:49.935Z","model":"qwen-turbo","input":[{"role":"user","content":"昨晚水得特别好，今天精神倍增！"}],"output":{"emotion":"positive","energy":"high","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.95,"evidence":["昨晚水得特别好","今天精神倍增"],"reason":"用户表达了积极的情绪和高能量状态，显示出满足感。","shouldPersist":true},"latency_ms":1146}

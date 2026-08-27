@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:55.485Z","model":"qwen-turbo","input":[{"role":"user","content":"你觉得我该不该接售这个项目？"}],"output":{"emotion":"unclear","energy":"normal","need":"advice","adviceWanted":"yes","engagement":"open","riskLevel":"none","confidence":0.8,"evidence":["你觉得我该不该接售这个项目？"],"reason":"用户询问是否应该接受一个项目，表现出寻求建议的需求。","shouldPersist":true},"latency_ms":1422}

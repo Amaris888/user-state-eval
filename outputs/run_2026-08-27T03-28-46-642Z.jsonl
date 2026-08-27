@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:46.642Z","model":"qwen-turbo","input":[{"role":"user","content":"今天天弃真好啊，想出去走走。"}],"output":{"emotion":"positive","energy":"high","need":"action","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["今天天弃真好啊，想出去走走。"],"reason":"用户表达了积极情绪和外出的意愿，表明精力充沛且有行动需求。","shouldPersist":true},"latency_ms":1051}

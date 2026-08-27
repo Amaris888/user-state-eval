@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:06.827Z","model":"qwen-turbo","input":[{"role":"user","content":"周末了，终于可以好好休息一下。"}],"output":{"emotion":"calm","energy":"normal","need":"space","adviceWanted":"no","engagement":"limited","riskLevel":"none","confidence":0.9,"evidence":["周末了，终于可以好好休息一下。"],"reason":"用户提到周末可以休息，表现出平静和满足的情绪，没有明显需求或情绪波动。","shouldPersist":true},"latency_ms":1009}

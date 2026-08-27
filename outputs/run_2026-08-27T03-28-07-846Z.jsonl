@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:07.846Z","model":"qwen-turbo","input":[{"role":"user","content":"我家猫今天特别粘人，一直往我怀里钻。"}],"output":{"emotion":"calm","energy":"normal","need":"companionship","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["我家猫今天特别粘人","一直往我怀里钻"],"reason":"用户描述了与宠物的亲密互动，情绪平稳，没有表现出负面情绪或需求。","shouldPersist":true},"latency_ms":1017}

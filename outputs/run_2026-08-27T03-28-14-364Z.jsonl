@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:14.364Z","model":"qwen-turbo","input":[{"role":"user","content":"刚看完一部电影，哭得不行，太感人了。"}],"output":{"emotion":"sad","energy":"low","need":"be_heard","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["刚看完一部电影","哭得不行","太感人了"],"reason":"用户因电影情绪低落，表达情感需求，未表现出需要建议或行动。","shouldPersist":true},"latency_ms":1021}

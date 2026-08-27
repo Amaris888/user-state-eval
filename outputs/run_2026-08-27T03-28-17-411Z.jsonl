@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:17.411Z","model":"qwen-turbo","input":[{"role":"user","content":"昨晚做了个特别奇怪的梦，梦到自己会飞了。"}],"output":{"emotion":"calm","energy":"normal","need":"be_heard","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["昨晚做了个特别奇怪的梦","梦到自己会飞了"],"reason":"用户分享了一个梦境，表现出平静和好奇的情绪，没有明显负面情绪或需求。","shouldPersist":true},"latency_ms":1022}

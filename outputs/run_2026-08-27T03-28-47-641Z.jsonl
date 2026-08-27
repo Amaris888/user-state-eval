@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:47.641Z","model":"qwen-turbo","input":[{"role":"user","content":"这个月花钱太多鸟，得省省了。"}],"output":{"emotion":"frustrated","energy":"normal","need":"action","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.8,"evidence":["这个月花钱太多鸟，得省省了。"],"reason":"用户表达了对过度消费的不满，显示出需要采取行动来节省开支。","shouldPersist":true},"latency_ms":998}

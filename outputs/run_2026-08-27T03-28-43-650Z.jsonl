@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:43.650Z","model":"qwen-turbo","input":[{"role":"user","content":"今天真得号累啊，想躺瓶。"}],"output":{"emotion":"sad","energy":"low","need":"space","adviceWanted":"no","engagement":"withdrawn","riskLevel":"none","confidence":0.9,"evidence":["今天真得号累啊","想躺瓶"],"reason":"用户表达疲惫，想要休息，没有寻求帮助或建议的迹象。","shouldPersist":true},"latency_ms":952}

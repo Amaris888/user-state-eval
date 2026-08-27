@@ -6,7 +6,7 @@ import type { Case } from "./schemas";
 
 // ========== 配置 ==========
 const DATASET_PATH = "./datasets/dev.jsonl";
-const MODEL_ID = "qwen-plus"; // 可换成 qwen-turbo 或 doubao-pro
+const MODEL_ID = "qwen-turbo"; // 可换成 qwen-turbo 或 doubao-pro
 export { DATASET_PATH, MODEL_ID };
 
 // ========== 批量评测 ==========
@@ -95,7 +95,7 @@ async function batchEvaluate(
       });
       failCount++;
     }
-
+/*
     // 每处理5条，保存一次进度（防止中断丢失数据）
     if ((i + 1) % 5 === 0) {
       const checkpointPath = join(outputDir, `checkpoint_${i + 1}.json`);
@@ -103,7 +103,7 @@ async function batchEvaluate(
       console.log(`   💾 检查点已保存 (${i + 1}/${total})`);
     }
 
-    console.log("");
+    console.log("");*/
   }
 
   // 5. 保存完整结果

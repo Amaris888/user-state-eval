@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:01.334Z","model":"qwen-turbo","input":[{"role":"user","content":"唉，算了。"}],"output":{"emotion":"frustrated","energy":"low","need":"space","adviceWanted":"unknown","engagement":"withdrawn","riskLevel":"none","confidence":0.8,"evidence":["唉","算了"],"reason":"用户使用了消极语气词'唉'和表示放弃的'算了'，表现出低落情绪和较低的精力状态。","shouldPersist":true},"latency_ms":931}

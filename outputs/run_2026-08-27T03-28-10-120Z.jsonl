@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:10.120Z","model":"qwen-turbo","input":[{"role":"user","content":"外面下雨了，听着雨声好安静。"}],"output":{"emotion":"calm","energy":"low","need":"companionship","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["外面下雨了","听着雨声好安静"],"reason":"用户描述了安静的环境，表现出平静的情绪，可能需要陪伴。","shouldPersist":true},"latency_ms":1227}

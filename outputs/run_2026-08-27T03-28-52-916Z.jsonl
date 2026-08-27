@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:52.916Z","model":"qwen-turbo","input":[{"role":"user","content":"对不气啊，昨天我态度不号。"}],"output":{"emotion":"apologetic","energy":"normal","need":"reassurance","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["对不气啊","昨天我态度不号"],"reason":"用户表达歉意，寻求理解或原谅，情绪为道歉，需求为安慰。","shouldPersist":true},"latency_ms":940}

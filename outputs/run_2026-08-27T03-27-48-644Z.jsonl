@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:27:48.644Z","model":"qwen-turbo","input":[{"role":"user","content":"我今天不想说话，让我一个人待会儿。"}],"output":{"emotion":"calm","energy":"low","need":"space","adviceWanted":"no","engagement":"withdrawn","riskLevel":"none","confidence":0.9,"evidence":["我今天不想说话","让我一个人待会儿"],"reason":"用户明确表达不想说话并希望独处，表明需要空间。","shouldPersist":true},"latency_ms":944}

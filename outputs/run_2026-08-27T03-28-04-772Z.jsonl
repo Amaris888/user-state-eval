@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:04.772Z","model":"qwen-turbo","input":[{"role":"user","content":"今天天气真好，阳光明媚的。"}],"output":{"emotion":"positive","energy":"high","need":"companionship","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["今天天气真好，阳光明媚的。"],"reason":"用户表达对天气的积极感受，情绪积极，精力状态较高，可能希望分享美好体验。","shouldPersist":true},"latency_ms":1123}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:27:41.148Z","model":"qwen-turbo","input":[{"role":"user","content":"我终于拿到心仪公司的 offer 了！"}],"output":{"emotion":"positive","energy":"high","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":1,"evidence":["我终于拿到心仪公司的 offer 了！"],"reason":"用户表达了强烈的喜悦情绪，表明其需求是庆祝。","shouldPersist":true},"latency_ms":904}

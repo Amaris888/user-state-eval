@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:40.534Z","model":"qwen-turbo","input":[{"role":"user","content":"今天迟到的火锅豪好吃啊！"}],"output":{"emotion":"positive","energy":"high","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["今天迟到的火锅豪好吃啊！"],"reason":"用户表达对迟到后吃到火锅的满意，情绪积极，精力充沛，需求为庆祝。","shouldPersist":true},"latency_ms":1213}

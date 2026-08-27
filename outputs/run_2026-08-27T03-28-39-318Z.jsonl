@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:39.318Z","model":"qwen-turbo","input":[{"role":"user","content":"他根本不鸟解我，说什么都没用。"}],"output":{"emotion":"frustrated","energy":"low","need":"be_heard","adviceWanted":"unknown","engagement":"limited","riskLevel":"none","confidence":0.9,"evidence":["他根本不鸟解我","说什么都没用"],"reason":"用户表达被忽视和无效沟通的挫败感，情绪为沮丧，需求是被倾听。","shouldPersist":true},"latency_ms":993}

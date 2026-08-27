@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:42.696Z","model":"qwen-turbo","input":[{"role":"user","content":"我跟我妈超了一架，现在很不爽。"}],"output":{"emotion":"angry","energy":"normal","need":"be_heard","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["我跟我妈超了一架","现在很不爽"],"reason":"用户提到与母亲发生争执并表达不满情绪，表明需要被倾听。","shouldPersist":true},"latency_ms":1182}

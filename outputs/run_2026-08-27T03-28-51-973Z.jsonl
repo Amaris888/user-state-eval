@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:51.973Z","model":"qwen-turbo","input":[{"role":"user","content":"枣上好！今天也要加油哦！"}],"output":{"emotion":"positive","energy":"high","need":"companionship","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["枣上好！","今天也要加油哦！"],"reason":"用户用积极的语气打招呼并鼓励自己，表现出正面情绪和高能量。","shouldPersist":true},"latency_ms":1019}

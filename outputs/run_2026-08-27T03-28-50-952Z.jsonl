@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:50.952Z","model":"qwen-turbo","input":[{"role":"user","content":"诶？我刚想硕什么来着？"}],"output":{"emotion":"unclear","energy":"unclear","need":"unclear","adviceWanted":"unknown","engagement":"unclear","riskLevel":"none","confidence":0.5,"evidence":["诶？我刚想硕什么来着？"],"reason":"用户表现出困惑和记忆模糊，但没有明确的情绪或需求表达。","shouldPersist":false},"latency_ms":1014}

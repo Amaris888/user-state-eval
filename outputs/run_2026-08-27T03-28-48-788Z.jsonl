@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:48.788Z","model":"qwen-turbo","input":[{"role":"user","content":"我碰友今天跟我说要般走了。"}],"output":{"emotion":"sad","energy":"low","need":"be_heard","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.8,"evidence":["我碰友今天跟我说要般走了"],"reason":"用户表达了对朋友即将离开的失落情绪，显示出需要被倾听。","shouldPersist":true},"latency_ms":1144}

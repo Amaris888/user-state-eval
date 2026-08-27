@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:28:37.356Z","model":"qwen-turbo","input":[{"role":"user","content":"今天班加的太晚了，我类死了。"}],"output":{"emotion":"frustrated","energy":"low","need":"be_heard","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["今天班加的太晚了","我类死了"],"reason":"用户表达因加班太晚而感到沮丧，需要被倾听。","shouldPersist":true},"latency_ms":1253}

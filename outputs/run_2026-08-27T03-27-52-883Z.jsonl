@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T03:27:52.883Z","model":"qwen-turbo","input":[{"role":"user","content":"今天真心类，不想东了，就像躺着。"}],"output":{"emotion":"sad","energy":"low","need":"space","adviceWanted":"no","engagement":"withdrawn","riskLevel":"none","confidence":0.9,"evidence":["今天真心类","不想东了","就像躺着"],"reason":"用户表达情绪低落，精力不足，希望独处。","shouldPersist":true},"latency_ms":962}
