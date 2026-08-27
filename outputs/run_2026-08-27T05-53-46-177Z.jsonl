@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:53:46.177Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"我感觉好咕独啊，没人人陪卧。"}],"output":{"emotion":"sad","energy":"unclear","need":"companionship","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["我感觉好咕独啊，没人人陪卧。"],"reason":"用户明确表达孤独和缺乏陪伴，情绪低落。","shouldPersist":true},"latency_ms":6333}

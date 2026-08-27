@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:54:32.314Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"对不气啊，昨天我态度不号。"}],"output":{"emotion":"calm","energy":"unclear","need":"be_heard","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["对不气啊，昨天我态度不号。"],"reason":"用户主动道歉，语气平静，希望被理解，无其他情绪或需求迹象。","shouldPersist":false},"latency_ms":6480}

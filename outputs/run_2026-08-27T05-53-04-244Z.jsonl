@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:53:04.244Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"今天班加的太晚了，我类死了。"}],"output":{"emotion":"sad","energy":"low","need":"be_heard","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["今天班加的太晚了","我类死了"],"reason":"用户表达加班导致极度疲惫，情绪低落，主要需求是倾诉和被理解，未明确寻求建议。","shouldPersist":false},"latency_ms":6403}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:54:37.866Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"挖！竟然真的重了奖！"}],"output":{"emotion":"positive","energy":"high","need":"celebration","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["挖！竟然真的重了奖！"],"reason":"用户用“挖”和感叹号表达惊喜，明确表示中奖，情绪积极兴奋，需要分享喜悦。","shouldPersist":true},"latency_ms":5548}

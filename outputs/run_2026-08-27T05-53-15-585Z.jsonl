@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:53:15.585Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"他根本不鸟解我，说什么都没用。"}],"output":{"emotion":"frustrated","energy":"low","need":"be_heard","adviceWanted":"no","engagement":"limited","riskLevel":"none","confidence":0.8,"evidence":["他根本不鸟解我","说什么都没用"],"reason":"用户表达被忽视的强烈挫败感，认为沟通无效，需要被倾听而非建议。","shouldPersist":false},"latency_ms":5686}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:50:15.200Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"早安！今天的阳光照在脸上好温暖。"}],"output":{"emotion":"positive","energy":"normal","need":"be_heard","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["阳光照在脸上好温暖"],"reason":"用户表达对阳光的正面感受，情绪积极，愿意分享心情，无特定需求或风险。","shouldPersist":false},"latency_ms":5191}

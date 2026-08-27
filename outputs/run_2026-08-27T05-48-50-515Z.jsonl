@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:48:50.515Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"今天天气真好，阳光明媚的。"}],"output":{"emotion":"positive","energy":"unclear","need":"be_heard","adviceWanted":"unknown","engagement":"unclear","riskLevel":"none","confidence":0.6,"evidence":["今天天气真好，阳光明媚的。"],"reason":"用户表达了对天气的积极感受，情绪积极，但其他状态信息不足。","shouldPersist":false},"latency_ms":5706}

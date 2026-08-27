@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:54:11.442Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"我碰友今天跟我说要般走了。"}],"output":{"emotion":"sad","energy":"low","need":"be_heard","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.8,"evidence":["我碰友今天跟我说要般走了"],"reason":"用户提到朋友要搬走，用词随意但隐含失落，可能希望被倾听和共情。","shouldPersist":false},"latency_ms":7440}

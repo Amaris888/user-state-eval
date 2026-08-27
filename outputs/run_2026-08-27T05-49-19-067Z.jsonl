@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:49:19.067Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"外面下雨了，听着雨声好安静。"}],"output":{"emotion":"calm","energy":"normal","need":"be_heard","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["外面下雨了，听着雨声好安静。"],"reason":"用户分享下雨时的宁静感受，语气平和，无负面情绪，只是表达当下状态，可能希望被倾听。","shouldPersist":false},"latency_ms":6868}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:48:59.896Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"周末了，终于可以好好休息一下。"}],"output":{"emotion":"positive","energy":"normal","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["周末了，终于可以好好休息一下。"],"reason":"用户表达对周末休息的期待，语气轻松积极，无负面情绪或求助意图。","shouldPersist":false},"latency_ms":4752}

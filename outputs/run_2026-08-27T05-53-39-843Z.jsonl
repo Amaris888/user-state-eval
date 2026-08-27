@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:53:39.843Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"今天真得号累啊，想躺瓶。"}],"output":{"emotion":"calm","energy":"low","need":"be_heard","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.8,"evidence":["今天真得号累啊","想躺瓶"],"reason":"用户表达疲惫和想休息的意愿，语气平静，无明显情绪波动或求助需求，推测只是想被倾听。","shouldPersist":false},"latency_ms":6744}

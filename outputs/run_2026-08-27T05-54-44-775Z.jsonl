@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:54:44.775Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"你觉得我该不该接售这个项目？"}],"output":{"emotion":"calm","energy":"unclear","need":"advice","adviceWanted":"yes","engagement":"open","riskLevel":"unclear","confidence":0.7,"evidence":["你觉得我该不该接这个项目？"],"reason":"用户直接询问是否该接项目，明确寻求建议，情绪平稳。","shouldPersist":false},"latency_ms":6907}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:53:58.548Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"今天天弃真好啊，想出去走走。"}],"output":{"emotion":"positive","energy":"normal","need":"unclear","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["今天天弃真好啊，想出去走走。"],"reason":"用户表达了对天气的喜爱和外出意愿，情绪积极，无明确需求或风险。","shouldPersist":false},"latency_ms":4686}

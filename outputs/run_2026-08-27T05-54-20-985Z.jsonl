@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:54:20.985Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"诶？我刚想硕什么来着？"}],"output":{"emotion":"unclear","energy":"unclear","need":"space","adviceWanted":"unknown","engagement":"unclear","riskLevel":"none","confidence":0.6,"evidence":["诶？我刚想硕什么来着？"],"reason":"用户突然忘记想说什么，情绪似困惑，但信息不足，能量和需求不明确，暂无风险。","shouldPersist":false},"latency_ms":4940}

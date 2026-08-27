@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:48:15.702Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"今天和喜欢的人一起吃饭了，开心！"}],"output":{"emotion":"positive","energy":"normal","need":"celebration","adviceWanted":"no","engagement":"open","riskLevel":"none","confidence":0.95,"evidence":["开心"],"reason":"用户明确表达喜悦，与喜欢的人共进午餐，情绪积极，无明显风险。","shouldPersist":true},"latency_ms":5563}

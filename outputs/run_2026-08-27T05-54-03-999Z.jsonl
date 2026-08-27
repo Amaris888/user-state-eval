@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T05:54:03.999Z","model":"deepseek-v4-pro","input":[{"role":"user","content":"这个月花钱太多鸟，得省省了。"}],"output":{"emotion":"calm","energy":"normal","need":"be_heard","adviceWanted":"unknown","engagement":"open","riskLevel":"none","confidence":0.9,"evidence":["这个月花钱太多鸟，得省省了。"],"reason":"用户陈述超支并决定节省，语气平静，无明显情绪波动，主要需求可能是被倾听。","shouldPersist":false},"latency_ms":5449}
