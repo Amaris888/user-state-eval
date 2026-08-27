@@ -1,0 +1,4655 @@
+[
+  {
+    "caseId": "job_anxiety_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "unclear",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "一个回复都没有",
+        "先别给建议",
+        "有点烦"
+      ],
+      "reason": "用户明确拒绝建议，情绪烦躁",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我最近投了好多简历。",
+        "一个回复都没有。",
+        "先别给建议，我就是有点烦。"
+      ],
+      "reason": "用户明确表达'烦'，强调'先别给建议'，聚焦情绪宣泄而非 problem-solving；重复强调无反馈（'好多'→'一个都没有'）体现挫败感；回应简洁，互动意愿有限。",
+      "shouldPersist": true
+    },
+    "latency": 3848,
+    "success": true
+  },
+  {
+    "caseId": "happy_share_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "拿到 offer 啦"
+      ],
+      "reason": "用户分享好消息，情绪积极",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.98,
+      "evidence": [
+        "我今天拿到 offer 啦！"
+      ],
+      "reason": "用户主动分享喜讯，感叹号传递强烈积极情绪，无负面词汇或 hesitation，典型庆祝型表达。",
+      "shouldPersist": false
+    },
+    "latency": 2788,
+    "success": true
+  },
+  {
+    "caseId": "refuse_advice_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "别给我讲大道理",
+        "就想吐槽一下"
+      ],
+      "reason": "用户明确拒绝建议，只想倾诉",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "别给我讲大道理",
+        "我就想吐槽一下今天的事"
+      ],
+      "reason": "用户明确拒绝说教（'别给我讲大道理'），强调诉求是情绪宣泄（'吐槽'），且主动开启对话，表明愿意倾诉但不需要建议或 solutions。",
+      "shouldPersist": true
+    },
+    "latency": 3239,
+    "success": true
+  },
+  {
+    "caseId": "exam_anxiety_001",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "还没复习完",
+        "想发泄一下"
+      ],
+      "reason": "用户明显焦虑，拒绝建议，只求倾听",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "明天就要考试了，我还没复习完。",
+        "聊也没用，我就是想发泄一下。"
+      ],
+      "reason": "用户明确表达时间紧迫（明天考试）和准备不足（没复习完），并强调‘想发泄’而非寻求解决方案，拒绝进一步对话（‘聊也没用’），显示情绪主导、需求为被倾听。",
+      "shouldPersist": true
+    },
+    "latency": 3693,
+    "success": true
+  },
+  {
+    "caseId": "friend_conflict_001",
+    "gold": {
+      "emotion": "angry",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "让我很不舒服",
+        "她根本不懂我"
+      ],
+      "reason": "用户表达愤怒和委屈，愿意继续倾诉",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我闺蜜今天跟我说的话让我很不舒服",
+        "她说我太敏感了",
+        "我觉得她根本不懂我"
+      ],
+      "reason": "用户明确表达不适感和被误解感，用词带有情绪负荷（'很不舒服''根本不懂'），主动回应提问并展开细节，显示倾诉意愿强，无自伤或危机信号。",
+      "shouldPersist": true
+    },
+    "latency": 3255,
+    "success": true
+  },
+  {
+    "caseId": "job_offer_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "终于拿到",
+        "offer"
+      ],
+      "reason": "用户表达强烈喜悦，希望分享好消息",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.98,
+      "evidence": [
+        "我终于拿到心仪公司的 offer 了！"
+      ],
+      "reason": "用户使用感叹号和‘终于’‘心仪’等强烈正向词汇，明确表达达成重要目标的喜悦，无负面线索。",
+      "shouldPersist": true
+    },
+    "latency": 3028,
+    "success": true
+  },
+  {
+    "caseId": "tired_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "好累",
+        "不想说话"
+      ],
+      "reason": "用户明确表达疲惫和不想说话",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "tired",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "unknown",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "今天真的好累",
+        "不想说话"
+      ],
+      "reason": "用户明确使用'好累'表达身体/精神耗竭，'不想说话'直接表明对社交互动的回避倾向，符合'空间需求'和' withdrawn '状态。",
+      "shouldPersist": false
+    },
+    "latency": 3038,
+    "success": true
+  },
+  {
+    "caseId": "sad_loss_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "奶奶上周去世了",
+        "家里空荡荡的"
+      ],
+      "reason": "用户表达丧失亲人的悲伤，需要倾听",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我奶奶上周去世了。",
+        "总觉得家里空荡荡的，很不习惯。"
+      ],
+      "reason": "用户直述亲人离世（近期事件），并用‘空荡荡’‘不习惯’表达强烈失落感与环境适应困难，语气温和开放，无自伤或危机表述，但存在哀伤反应需关注。",
+      "shouldPersist": true
+    },
+    "latency": 3651,
+    "success": true
+  },
+  {
+    "caseId": "anxious_exam_002",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "完全睡不着",
+        "控制不住地紧张"
+      ],
+      "reason": "用户考前焦虑，需要安抚和确认",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "后天就要考研了",
+        "我完全睡不着",
+        "控制不住地紧张"
+      ],
+      "reason": "用户明确表达生理失眠（完全睡不着）与心理失控感（控制不住地紧张），时间节点紧迫（后天），情绪指向典型考前焦虑，主动回应提问说明开放互动，但存在睡眠剥夺风险需关注。",
+      "shouldPersist": true
+    },
+    "latency": 3303,
+    "success": true
+  },
+  {
+    "caseId": "angry_conflict_002",
+    "gold": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "大吵了一架",
+        "真的受够了"
+      ],
+      "reason": "用户表达对家庭冲突的愤怒，需要倾诉",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我跟我妈大吵了一架。",
+        "她总是干涉我的选择，我真的受够了。"
+      ],
+      "reason": "用户用‘大吵’和‘受够了’表达强烈情绪，语句简短有力，显示高能量下的挫败与愤怒；主动陈述冲突，表明渴望被倾听而非立即解决。",
+      "shouldPersist": true
+    },
+    "latency": 3504,
+    "success": true
+  },
+  {
+    "caseId": "frustrated_work_003",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "连续加班两周",
+        "好无力"
+      ],
+      "reason": "用户表达工作压力和无力感",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我连续加班两周了",
+        "项目还是做不完",
+        "感觉怎么做都赶不上 deadline",
+        "好无力"
+      ],
+      "reason": "用户明确描述持续加班、任务未完成、时间压力和无力感，情绪低落、精力耗竭，主动倾诉但未直接寻求建议，需关注倦怠与潜在心理风险。",
+      "shouldPersist": true
+    },
+    "latency": 3215,
+    "success": true
+  },
+  {
+    "caseId": "positive_promotion_002",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "给我升职"
+      ],
+      "reason": "用户分享升职喜讯，情绪高涨",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "领导今天找我谈话",
+        "说要给我升职"
+      ],
+      "reason": "用户主动分享职场积极事件，用感叹号强化喜悦情绪，无负面词汇或矛盾表述，典型正向兴奋状态。",
+      "shouldPersist": false
+    },
+    "latency": 3063,
+    "success": true
+  },
+  {
+    "caseId": "space_request_002",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "不想说话",
+        "让我一个人待会儿"
+      ],
+      "reason": "用户明确要求独处空间",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我今天不想说话",
+        "让我一个人待会儿"
+      ],
+      "reason": "用户明确表达言语回避和独处需求，语气平静无激烈情绪词，无自伤/绝望等风险信号，属健康的情绪调节行为。",
+      "shouldPersist": true
+    },
+    "latency": 3029,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "又加班",
+        "加了八天班"
+      ],
+      "reason": "反讽语气，实际表达不满和疲惫",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "太棒了，又加班",
+        "我这个月已经加了八天班了"
+      ],
+      "reason": "反语‘太棒了’配合‘又加班’和具体加班天数（八天）表明强烈疲惫与无奈；语气平淡无情绪宣泄，倾向倾诉而非求助，未提解决方案或明确请求建议。",
+      "shouldPersist": true
+    },
+    "latency": 3753,
+    "success": true
+  },
+  {
+    "caseId": "mixed_emotion_001",
+    "gold": {
+      "emotion": "mixed",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "开心又害怕"
+      ],
+      "reason": "用户同时表达开心和害怕，情绪复杂",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "mixed",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我男朋友今天跟我求婚了",
+        "但我既开心又害怕"
+      ],
+      "reason": "用户明确表达双重情绪（开心+害怕），语境为重大人生事件，无负面行为或 crisis 语言，主动分享表明开放互动意愿。",
+      "shouldPersist": true
+    },
+    "latency": 3125,
+    "success": true
+  },
+  {
+    "caseId": "third_party_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.82,
+      "evidence": [
+        "朋友被分手了",
+        "不知道怎么安慰"
+      ],
+      "reason": "用户描述朋友的情绪，本人情绪平静，需求是寻求建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我最好的朋友被分手了",
+        "她特别难过",
+        "我都不知道该怎么安慰她"
+      ],
+      "reason": "用户明确表达对他人痛苦的共情与自身无助感，语气关切无自伤/危机线索，主诉是安慰技能缺失，属典型支持性陪伴需求。",
+      "shouldPersist": true
+    },
+    "latency": 3330,
+    "success": true
+  },
+  {
+    "caseId": "asr_error_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.8,
+      "evidence": [
+        "真心类",
+        "不想东"
+      ],
+      "reason": "ASR错字，实际表达疲惫不想动",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "今天真心累",
+        "不想动了",
+        "就想躺着"
+      ],
+      "reason": "用户用'真心累''不想动''就想躺着'明确表达身心疲惫与退缩倾向，无负面情绪升级或危机信号，属典型低能量休息需求。",
+      "shouldPersist": false
+    },
+    "latency": 3234,
+    "success": true
+  },
+  {
+    "caseId": "advice_request_002",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.93,
+      "evidence": [
+        "收到了两个offer",
+        "能帮我分析一下吗"
+      ],
+      "reason": "用户明确寻求职业建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我收到了两个offer",
+        "不知道该怎么选",
+        "能帮我分析一下吗？"
+      ],
+      "reason": "用户明确表达决策困惑（'不知道该怎么选'），主动寻求分析支持，语气中性偏急切，无危机信号，但存在典型选择焦虑特征。",
+      "shouldPersist": true
+    },
+    "latency": 3148,
+    "success": true
+  },
+  {
+    "caseId": "lonely_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "一个人在这个城市",
+        "好孤单",
+        "报喜不报忧"
+      ],
+      "reason": "用户表达孤独和隐忍情绪，需要被理解",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "好孤单啊",
+        "不想让家人担心",
+        "一般都报喜不报忧"
+      ],
+      "reason": "用户主动表达孤独感，强调隐瞒真实状态以保护家人，显示情绪低落和内在压抑；回应中愿意继续对话，表明开放倾诉意愿；无即时危机信号但存在长期情感耗竭风险。",
+      "shouldPersist": true
+    },
+    "latency": 3419,
+    "success": true
+  },
+  {
+    "caseId": "angry_internet_003",
+    "gold": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "喷子太多了",
+        "火大"
+      ],
+      "reason": "用户表达对网络言论的愤怒",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "网上的喷子太多了",
+        "看得我火大"
+      ],
+      "reason": "用户使用强烈情绪词‘火大’，并表达对网络负面现象的激愤反应，语句简短有力，显示高能量愤怒；未流露自伤/伤害他人倾向，但需要情绪认同与安抚。",
+      "shouldPersist": true
+    },
+    "latency": 3426,
+    "success": true
+  },
+  {
+    "caseId": "anxious_health_003",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.88,
+      "evidence": [
+        "指标不太正常",
+        "特别慌"
+      ],
+      "reason": "用户因健康问题焦虑，需要安抚和明确建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我体检报告出来了，有些指标不太正常。",
+        "还没看医生，我现在特别慌。"
+      ],
+      "reason": "用户明确使用'特别慌'表达强烈焦虑，未就医且对异常指标缺乏解释，存在健康不确定性；主动陈述问题并回应关心，显示开放互动意愿；虽无自伤/危机表述，但情绪显著失衡需关注。",
+      "shouldPersist": true
+    },
+    "latency": 3397,
+    "success": true
+  },
+  {
+    "caseId": "positive_date_003",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "和喜欢的人一起吃饭",
+        "开心"
+      ],
+      "reason": "用户分享约会喜悦",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "今天和喜欢的人一起吃饭了",
+        "开心！"
+      ],
+      "reason": "用户明确使用感叹号表达强烈正向情绪，事件具有社交愉悦性和个人意义，无负面词汇或压力线索。",
+      "shouldPersist": true
+    },
+    "latency": 2879,
+    "success": true
+  },
+  {
+    "caseId": "urgent_risk_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "urgent",
+      "confidence": 0.92,
+      "evidence": [
+        "不想活了",
+        "好痛苦"
+      ],
+      "reason": "用户表达自杀意念，需要紧急干预",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "urgent",
+      "confidence": 0.98,
+      "evidence": [
+        "我真的不想活了",
+        "活着的每一天都好痛苦"
+      ],
+      "reason": "用户明确表达自杀意念（'不想活了'）和持续性痛苦体验（'每一天都好痛苦'），属高危心理危机信号，需立即关注。",
+      "shouldPersist": true
+    },
+    "latency": 3159,
+    "success": true
+  },
+  {
+    "caseId": "watch_risk_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "watch",
+      "confidence": 0.85,
+      "evidence": [
+        "如果我不在了"
+      ],
+      "reason": "用户表达模糊的自伤念头，需要关注",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "有时候会觉得，如果我不在了，是不是大家都轻松了。"
+      ],
+      "reason": "语句含被动消解自我价值的假设性表达，透露出孤独感与存在负向归因，属轻度心理危机信号，需关注但无即时行动证据。",
+      "shouldPersist": true
+    },
+    "latency": 3170,
+    "success": true
+  },
+  {
+    "caseId": "ambiguous_001",
+    "gold": {
+      "emotion": "unclear",
+      "energy": "unclear",
+      "need": "unclear",
+      "adviceWanted": "unknown",
+      "engagement": "unclear",
+      "riskLevel": "unclear",
+      "confidence": 0.5,
+      "evidence": [
+        "算了"
+      ],
+      "reason": "信息不足，无法可靠判断用户状态",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "唉",
+        "算了"
+      ],
+      "reason": "‘唉’表达疲惫或无奈，‘算了’是典型放弃性语言，暗示主动终止互动、回避进一步讨论，情绪低落且无求助意图。",
+      "shouldPersist": false
+    },
+    "latency": 2893,
+    "success": true
+  },
+  {
+    "caseId": "mixed_advice_002",
+    "gold": {
+      "emotion": "mixed",
+      "energy": "low",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "被裁员了",
+        "不知道接下来该怎么办"
+      ],
+      "reason": "用户情绪复杂，但明确表达了求助需求",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "mixed",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我被裁员了",
+        "既难过又觉得是解脱",
+        "我不知道接下来该怎么办"
+      ],
+      "reason": "用户明确表达矛盾情绪（难过/解脱）和认知不确定性（不知道该怎么办），语义开放，无自伤或危机语言，但存在职业身份冲击和方向迷茫，需温和陪伴与逐步引导。",
+      "shouldPersist": true
+    },
+    "latency": 3422,
+    "success": true
+  },
+  {
+    "caseId": "calm_daily_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "天气不错",
+        "心情也挺好"
+      ],
+      "reason": "用户表达平淡愉悦，适合轻松陪伴",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "今天天气不错",
+        "心情也挺好的"
+      ],
+      "reason": "用户明确使用积极描述词‘不错’和‘挺好’，无负面词汇或矛盾表述，语境轻松自然，呈现典型正向情绪状态。",
+      "shouldPersist": false
+    },
+    "latency": 3040,
+    "success": true
+  },
+  {
+    "caseId": "casual_weather_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "天气真好",
+        "阳光明媚"
+      ],
+      "reason": "用户分享对天气的愉悦感受，适合轻松陪伴",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "今天天气真好",
+        "阳光明媚的"
+      ],
+      "reason": "用户主动描述天气美好，用词积极（'真好''明媚'），无负面词汇或求助信号，呈现轻快、欣赏当下的状态。",
+      "shouldPersist": false
+    },
+    "latency": 2949,
+    "success": true
+  },
+  {
+    "caseId": "casual_food_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "特别好吃",
+        "好满足"
+      ],
+      "reason": "用户分享日常小确幸，情绪积极",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "今天中午吃了顿特别好吃的饭",
+        "好满足"
+      ],
+      "reason": "用户主动分享积极生活体验，用'特别好吃''好满足'等强正向词汇，无负面线索，语义完整且情绪外显。",
+      "shouldPersist": false
+    },
+    "latency": 3070,
+    "success": true
+  },
+  {
+    "caseId": "casual_weekend_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "周末了",
+        "好好休息"
+      ],
+      "reason": "用户表达周末放松的期待",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "rest",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "周末了",
+        "终于可以好好休息一下"
+      ],
+      "reason": "用户明确表达时间状态（周末）和积极放松意图（‘终于’‘好好休息’），无负面词汇或压力信号，语气舒缓，呈现自然的松弛期待。",
+      "shouldPersist": false
+    },
+    "latency": 3040,
+    "success": true
+  },
+  {
+    "caseId": "casual_cat_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "猫特别粘人",
+        "往我怀里钻"
+      ],
+      "reason": "用户分享与宠物的温馨时刻",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "companionship",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我家猫今天特别粘人",
+        "一直往我怀里钻"
+      ],
+      "reason": "描述中无负面情绪词，行为体现亲密依恋，语境温暖平和；'特别粘人''一直往怀里钻'明确指向寻求陪伴；未提问或表达困扰，故不需建议。",
+      "shouldPersist": false
+    },
+    "latency": 3370,
+    "success": true
+  },
+  {
+    "caseId": "casual_gym_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "练了一个小时",
+        "真舒服"
+      ],
+      "reason": "用户分享运动后的愉悦感",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "今天去健身房练了一个小时",
+        "出完汗真舒服"
+      ],
+      "reason": "用户主动分享积极体验，用'真舒服'表达满足感，无负面词汇或求助信号，语调轻快。",
+      "shouldPersist": false
+    },
+    "latency": 3344,
+    "success": true
+  },
+  {
+    "caseId": "casual_rain_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "下雨了",
+        "听着雨声"
+      ],
+      "reason": "用户表达对雨景的平静感受",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "companionship",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "外面下雨了",
+        "听着雨声好安静"
+      ],
+      "reason": "用户描述自然场景并强调‘安静’，语调平和，无负面词汇或求助信号，呈现沉浸式放松状态，隐含分享当下宁静体验的联结意愿。",
+      "shouldPersist": false
+    },
+    "latency": 3202,
+    "success": true
+  },
+  {
+    "caseId": "casual_sleep_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "睡得特别好",
+        "精神满满"
+      ],
+      "reason": "用户分享良好睡眠带来的精力充沛",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "昨晚睡得特别好",
+        "今天精神满满"
+      ],
+      "reason": "用户明确使用积极词汇描述睡眠质量和当前状态，无负面线索，表达自然愉悦，呈现高能量正向情绪。",
+      "shouldPersist": false
+    },
+    "latency": 2842,
+    "success": true
+  },
+  {
+    "caseId": "casual_traffic_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "堵车堵了一个小时",
+        "好烦"
+      ],
+      "reason": "用户表达日常烦躁，需要倾听而非建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "今天堵车堵了一个小时",
+        "好烦"
+      ],
+      "reason": "用户明确使用‘好烦’表达负面情绪，主诉为通勤受阻的即时困扰，无自伤/绝望/躯体化等高风险线索，语气简洁但开放倾诉。",
+      "shouldPersist": false
+    },
+    "latency": 3271,
+    "success": true
+  },
+  {
+    "caseId": "casual_music_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "特别好听的歌",
+        "单曲循环"
+      ],
+      "reason": "用户分享音乐发现的喜悦",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "今天发现了一首特别好听的歌",
+        "单曲循环了一整天"
+      ],
+      "reason": "用户用'特别好听'表达强烈正向评价，'单曲循环一整天'体现沉浸式愉悦和主动分享倾向，无负面词汇或压力信号。",
+      "shouldPersist": false
+    },
+    "latency": 3192,
+    "success": true
+  },
+  {
+    "caseId": "casual_sad_movie_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "哭得不行",
+        "太感人了"
+      ],
+      "reason": "用户因电影情节感动落泪，属于正常情绪释放",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "刚看完一部电影",
+        "哭得不行",
+        "太感人了"
+      ],
+      "reason": "用户明确表达强烈情绪反应（哭得不行）和主观评价（太感人了），属典型共情后的情绪释放，无负面自评或风险线索，语态开放，倾向分享感受而非寻求解决方案。",
+      "shouldPersist": true
+    },
+    "latency": 3474,
+    "success": true
+  },
+  {
+    "caseId": "casual_idle_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "好无聊",
+        "不知道干什么"
+      ],
+      "reason": "用户表达无聊，需要陪伴或话题",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "companionhip",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "好无聊啊",
+        "不知道干什么好"
+      ],
+      "reason": "用户表达无聊和行动迟疑，无负面情绪词或 distress 信号，语调中性偏轻度倦怠，开放陈述暗示愿意互动。",
+      "shouldPersist": false
+    },
+    "latency": 2971,
+    "success": true
+  },
+  {
+    "caseId": "casual_cooking_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "学了一道新菜",
+        "很有成就感"
+      ],
+      "reason": "用户分享烹饪成功的喜悦和成就感",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "今天学了一道新菜",
+        "居然成功了",
+        "很有成就感"
+      ],
+      "reason": "用户使用感叹语气和积极词汇（'居然成功了''很有成就感'）表达明显正向情绪，无负面线索，主动分享成就，体现高能量与庆祝需求。",
+      "shouldPersist": true
+    },
+    "latency": 3406,
+    "success": true
+  },
+  {
+    "caseId": "casual_dream_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "特别奇怪的梦",
+        "会飞了"
+      ],
+      "reason": "用户分享有趣的梦境，情绪轻松愉快",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "昨晚做了个特别奇怪的梦",
+        "梦到自己会飞了"
+      ],
+      "reason": "用户以轻松语气描述梦境，用词中性偏积极（'特别奇怪'含趣味感，无负面修饰），未表达困扰或求助意图，主语明确、句式完整，呈现分享倾向。",
+      "shouldPersist": true
+    },
+    "latency": 3401,
+    "success": true
+  },
+  {
+    "caseId": "casual_tired_but_happy_001",
+    "gold": {
+      "emotion": "mixed",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "好累",
+        "但是很开心",
+        "做了自己喜欢的事"
+      ],
+      "reason": "用户同时表达疲惫和满足，情绪复杂但积极",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "low",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "今天忙了一天好累",
+        "但是很开心",
+        "因为做了自己喜欢的事"
+      ],
+      "reason": "用户明确表达疲惫（低能量）与开心并存，情绪主调积极；'做了自己喜欢的事'指向内在满足，核心需求是被认可/庆祝；无求助或困扰表述，风险为零。",
+      "shouldPersist": false
+    },
+    "latency": 3503,
+    "success": true
+  },
+  {
+    "caseId": "casual_morning_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "早安",
+        "阳光照在脸上好温暖"
+      ],
+      "reason": "用户以积极情绪开启一天，适合温暖陪伴",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "早安！",
+        "今天的阳光照在脸上好温暖。"
+      ],
+      "reason": "用户主动问候并用具身化语言描述温暖感受，语调轻盈积极，无负面词汇或压力信号。",
+      "shouldPersist": false
+    },
+    "latency": 2874,
+    "success": true
+  },
+  {
+    "caseId": "pressure_deadline_001",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "周五就要交",
+        "才写了一半",
+        "压力特别大"
+      ],
+      "reason": "用户因截止日期临近而焦虑，需要安抚",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "这周五就要交方案了，我才写了一半。",
+        "压力特别大",
+        "感觉怎么都写不完"
+      ],
+      "reason": "用户明确提到截止日迫近、进度滞后（仅一半）、并用‘特别大’‘怎么都’强调焦虑与无力感，主动回应提问表明开放互动；尚未出现自伤/崩溃表述，但持续高压需关注。",
+      "shouldPersist": true
+    },
+    "latency": 3596,
+    "success": true
+  },
+  {
+    "caseId": "pressure_finance_001",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.86,
+      "evidence": [
+        "开销好大",
+        "信用卡账单快还不上了",
+        "很慌"
+      ],
+      "reason": "用户因经济压力焦虑，需要倾诉和建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "这个月开销好大",
+        "信用卡账单快还不上了",
+        "我也不知道该怎么办",
+        "就是很慌"
+      ],
+      "reason": "用户连续使用负面描述（'好大''快还不上''不知道怎么办''很慌'），明确表达失控感和紧迫焦虑，主动回应提问显示开放性，但无自伤/绝望表述，故风险为watch。",
+      "shouldPersist": true
+    },
+    "latency": 3951,
+    "success": true
+  },
+  {
+    "caseId": "pressure_family_001",
+    "gold": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "催我结婚",
+        "被烦死了",
+        "听不进去"
+      ],
+      "reason": "用户因家庭压力感到愤怒和无奈，需要倾听",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我爸妈又催我结婚了，真的快被烦死了。",
+        "说过好多次了，他们根本听不进去。"
+      ],
+      "reason": "用户用'快被烦死了'表达强烈烦躁，'根本听不进去'显示沟通失效后的无力感，回应简短被动，未主动寻求解决方案，情绪主导明显。",
+      "shouldPersist": true
+    },
+    "latency": 3294,
+    "success": true
+  },
+  {
+    "caseId": "pressure_exam_003",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.89,
+      "evidence": [
+        "模拟考成绩",
+        "比上次还低",
+        "怎么都提不上去"
+      ],
+      "reason": "用户因考试失利感到受挫，需要鼓励",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "模拟考成绩出来了，比上次还低",
+        "我已经很努力了",
+        "感觉怎么都提不上去"
+      ],
+      "reason": "用户连续两次成绩下滑，强调'已经很努力'却无效，流露出无力感和自我怀疑，语气中隐含疲惫与挫败，未主动寻求建议但开放倾听，需警惕长期受挫引发的习得性无助。",
+      "shouldPersist": true
+    },
+    "latency": 3440,
+    "success": true
+  },
+  {
+    "caseId": "relationship_breakup_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "谈了三年多",
+        "分手了",
+        "被掏空了"
+      ],
+      "reason": "用户经历失恋，表达深刻的悲伤和空虚感",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.95,
+      "evidence": [
+        "我和谈了三年多的女朋友分手了",
+        "感觉整个人都被掏空了"
+      ],
+      "reason": "用户明确陈述分手事实，用'被掏空'强烈表达情感耗竭，语义重心在倾诉而非寻求解决方案，情绪低落且精力明显不足。",
+      "shouldPersist": true
+    },
+    "latency": 2955,
+    "success": true
+  },
+  {
+    "caseId": "relationship_colleague_001",
+    "gold": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "抢我的功劳",
+        "心里特别气"
+      ],
+      "reason": "用户表达职场委屈和愤怒，需要倾听",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "angry",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我同事今天又在会议上抢我的功劳",
+        "我没有当场说，但心里特别气"
+      ],
+      "reason": "用户明确表达被抢功的事件和‘特别气’的情绪，未表现出自伤/伤害他人倾向，且对提问有回应，显示开放互动意愿。",
+      "shouldPersist": true
+    },
+    "latency": 3361,
+    "success": true
+  },
+  {
+    "caseId": "relationship_friend_betray_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "最好的朋友",
+        "在背后说我坏话",
+        "看错人了"
+      ],
+      "reason": "用户因朋友背叛而感到伤心和迷茫",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我发现我最好的朋友在背后说我坏话。",
+        "我感觉自己看错人了，不知道该怎么办。"
+      ],
+      "reason": "用户使用‘最痛’‘看错人’‘不知道该怎么办’等表述，流露明显悲伤与迷茫；主动回应提问，显示开放倾诉意愿；无自伤/伤害他人线索，风险低。",
+      "shouldPersist": true
+    },
+    "latency": 3684,
+    "success": true
+  },
+  {
+    "caseId": "pressure_body_image_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.84,
+      "evidence": [
+        "胖了好多",
+        "不想看自己",
+        "吃甜食"
+      ],
+      "reason": "用户表达身体形象焦虑，需要共情和理解",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.85,
+      "evidence": [
+        "最近胖了好多，照镜子都不想看自己。",
+        "可能是压力太大了，老是吃甜食。"
+      ],
+      "reason": "用户表达身体形象困扰和自我回避行为（不想照镜子），关联压力性进食，情绪低落明显；主动回应提问，显示开放倾诉意愿；无自伤/绝望表述，但长期压力与情绪性进食需关注身心健康风险。",
+      "shouldPersist": true
+    },
+    "latency": 3819,
+    "success": true
+  },
+  {
+    "caseId": "relationship_gossip_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "好八卦",
+        "莫名其妙的",
+        "不知道该怎么应对"
+      ],
+      "reason": "用户因职场八卦感到烦恼，寻求应对方式",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我们公司的人都好八卦，天天传一些莫名其妙的事情。",
+        "是啊，我都不知道该怎么应对了。"
+      ],
+      "reason": "用户明确表达对八卦现象的困扰，并用'不知道该怎么应对'直接表明寻求应对策略的需求，语气中透露出无力感和低精力状态，但主动回应提问，显示开放互动意愿。",
+      "shouldPersist": true
+    },
+    "latency": 3297,
+    "success": true
+  },
+  {
+    "caseId": "pressure_unknown_future_001",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "马上毕业了",
+        "不知道以后要做什么",
+        "什么都做不好"
+      ],
+      "reason": "用户对未来感到迷茫和焦虑，需要引导",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "马上毕业了，完全不知道以后要做什么",
+        "好像什么都想做，但又什么都做不好"
+      ],
+      "reason": "用户表达毕业前的典型存在性焦虑，'完全不知道'和'什么都做不好'显示自我怀疑与无力感，但主动倾诉且回应提问，表明开放求助意愿。",
+      "shouldPersist": true
+    },
+    "latency": 3138,
+    "success": true
+  },
+  {
+    "caseId": "relationship_parents_divorce_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "watch",
+      "confidence": 0.93,
+      "evidence": [
+        "要离婚了",
+        "还是好难受"
+      ],
+      "reason": "用户经历家庭变故，表达深深的悲伤",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我爸妈今天跟我说他们要离婚了。",
+        "虽然我早就感觉到了，但听到的那一刻还是好难受。"
+      ],
+      "reason": "用户直述重大家庭变故，用'好难受'明确表达悲伤情绪；'早就感觉到'显示长期心理负荷，'那一刻'凸显即时冲击，整体呈现低能量下的情感倾诉需求。",
+      "shouldPersist": true
+    },
+    "latency": 3316,
+    "success": true
+  },
+  {
+    "caseId": "pressure_workload_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "加了新项目",
+        "手头三个",
+        "能搞定"
+      ],
+      "reason": "用户表达工作超负荷的无奈和受挫",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "领导又给我加了新项目",
+        "本来手头就已经三个了",
+        "反映了，但他觉得我能力很强，能搞定"
+      ],
+      "reason": "用户明确表达工作超负荷（'又加'' already three'），反馈未被采纳且被轻描淡写归因为'能力强'，语气中透出无力感与委屈，主动延续对话表明愿意倾诉并寻求支持。",
+      "shouldPersist": true
+    },
+    "latency": 3663,
+    "success": true
+  },
+  {
+    "caseId": "relationship_roommate_001",
+    "gold": {
+      "emotion": "angry",
+      "energy": "low",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "半夜打游戏",
+        "根本睡不着",
+        "还是那样"
+      ],
+      "reason": "用户因室友干扰睡眠而愤怒，需要解决建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我室友天天半夜打游戏，吵得我根本睡不着。",
+        "说过好几次了，他还是那样。"
+      ],
+      "reason": "用户反复遭遇睡眠干扰且沟通无效，语气中透露出无力感和持续困扰，情绪明显受挫；主动回应提问表明愿意继续交流，存在现实困扰但无即时危机信号。",
+      "shouldPersist": true
+    },
+    "latency": 3639,
+    "success": true
+  },
+  {
+    "caseId": "pressure_age_001",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "三十岁了",
+        "一事无成",
+        "什么都在焦虑"
+      ],
+      "reason": "用户对年龄和人生成就感到焦虑",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我马上三十岁了，感觉一事无成。",
+        "事业、感情、存款，什么都在焦虑。"
+      ],
+      "reason": "用户明确使用'焦虑'描述自身状态，叠加'一事无成'的自我否定和多重生活领域（事业/感情/存款）的同步压力，显示典型发展性焦虑；主动回应提问，表明开放倾诉意愿。",
+      "shouldPersist": true
+    },
+    "latency": 3747,
+    "success": true
+  },
+  {
+    "caseId": "relationship_social_anxiety_001",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "不认识的人",
+        "好紧张",
+        "说出来好一点了"
+      ],
+      "reason": "用户表达社交焦虑，只需要倾诉而非建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "周末要去参加一个聚会，好多不认识的人",
+        "我好紧张",
+        "不用了，就是想说一下",
+        "感觉说出来好一点了"
+      ],
+      "reason": "用户明确表达紧张情绪，主动陈述而非提问，拒绝建议，强调倾诉后的缓解感，体现对被倾听的需求。",
+      "shouldPersist": true
+    },
+    "latency": 3348,
+    "success": true
+  },
+  {
+    "caseId": "asr_work_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.82,
+      "evidence": [
+        "班加的太晚了",
+        "类死了"
+      ],
+      "reason": "ASR错误：'班加'应为'加班'，'类死'应为'累死'，实际表达加班疲惫",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "tired",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "今天班加的太晚了",
+        "我类死了"
+      ],
+      "reason": "用户用口语化表达‘班加太晚’和夸张说法‘我类死了’（应为‘累死了’），明确传递极度疲惫感；无负面情绪词或危机信号，属常见工作耗竭状态。",
+      "shouldPersist": false
+    },
+    "latency": 3391,
+    "success": true
+  },
+  {
+    "caseId": "asr_health_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.8,
+      "evidence": [
+        "头好同",
+        "感冒了"
+      ],
+      "reason": "ASR错误：'头好同'应为'头好痛'，实际表达身体不适",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "我头好同啊",
+        "不知道是不是感冒了"
+      ],
+      "reason": "用户主诉头痛，伴随不确定性（'不知道是不是感冒了'），语气透露不适与轻微焦虑，但无危及生命表述，主动陈述症状表明愿意沟通。",
+      "shouldPersist": true
+    },
+    "latency": 3418,
+    "success": true
+  },
+  {
+    "caseId": "asr_relationship_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.83,
+      "evidence": [
+        "鸟解我",
+        "说什么都没用"
+      ],
+      "reason": "ASR错误：'鸟解'应为'了解'，实际表达人际沟通受挫",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "他根本不鸟解我",
+        "说什么都没用"
+      ],
+      "reason": "用户使用强烈否定表达（'根本不鸟解'、'说什么都没用'）体现被忽视感和沟通受挫，语气中无自伤/绝望词汇，但有倾诉意图，故判定为挫败情绪、开放互动、需求为被倾听。",
+      "shouldPersist": true
+    },
+    "latency": 3564,
+    "success": true
+  },
+  {
+    "caseId": "asr_food_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "火锅豪好吃"
+      ],
+      "reason": "ASR错误：'迟到'应为'吃到'，'豪好吃'应为'好好吃'，实际表达美食喜悦",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "今天迟到的火锅豪好吃啊！"
+      ],
+      "reason": "用户用感叹句和口语化表达‘豪好吃’传递强烈愉悦感，‘迟到’未引发负面情绪，反而强化满足感，整体呈现兴奋、高能量的庆祝状态。",
+      "shouldPersist": false
+    },
+    "latency": 3124,
+    "success": true
+  },
+  {
+    "caseId": "asr_anxiety_001",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.84,
+      "evidence": [
+        "考室了",
+        "没负习完"
+      ],
+      "reason": "ASR错误：'考室'应为'考试'，'负习'应为'复习'，实际表达考前焦虑",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "明天就考室了",
+        "我还没负习完"
+      ],
+      "reason": "用户使用错别字'考室'（应为'考试'）和'负习'（应为'复习'），反映紧张导致的书写紊乱；时间紧迫（'明天就'）与未完成状态（'还没...完'）共同指向典型考前焦虑。",
+      "shouldPersist": true
+    },
+    "latency": 3656,
+    "success": true
+  },
+  {
+    "caseId": "asr_conflict_001",
+    "gold": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "超了一架",
+        "很不爽"
+      ],
+      "reason": "ASR错误：'超了一架'应为'吵了一架'，实际表达家庭冲突",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我跟我妈超了一架",
+        "现在很不爽"
+      ],
+      "reason": "用户明确使用'超了一架'（方言/口语化表达冲突）和'很不爽'，情绪强烈且指向具体人际事件；无自伤、绝望或身体不适表述，风险低；语气直接，有倾诉意图。",
+      "shouldPersist": true
+    },
+    "latency": 3766,
+    "success": true
+  },
+  {
+    "caseId": "asr_tired_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.81,
+      "evidence": [
+        "号累",
+        "想躺瓶"
+      ],
+      "reason": "ASR错误：'真得'应为'真的'，'号累'应为'好累'，'躺瓶'应为'躺平'，实际表达疲惫",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "tired",
+      "energy": "low",
+      "need": "rest",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "今天真得号累啊",
+        "想躺瓶"
+      ],
+      "reason": "用户用方言化表达'好累'和'躺平'，明确传递身体与精神疲惫感；句式简短、无追问或延伸，显示低互动意愿；无负面情绪词或危机信号。",
+      "shouldPersist": false
+    },
+    "latency": 3228,
+    "success": true
+  },
+  {
+    "caseId": "asr_sad_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.82,
+      "evidence": [
+        "好咕独",
+        "没人人陪卧"
+      ],
+      "reason": "ASR错误：'咕独'应为'孤独'，'没人'应为'没有人'，'陪卧'应为'陪我'，实际表达孤独感",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我感觉好咕独啊",
+        "没人人陪卧"
+      ],
+      "reason": "‘咕独’是‘孤独’的谐音错写，表达强烈孤独感；‘没人人陪卧’显示社交联结缺失，用词稚拙且带无助感，情绪低落明显，但无自伤或绝望表述。",
+      "shouldPersist": true
+    },
+    "latency": 3464,
+    "success": true
+  },
+  {
+    "caseId": "asr_work_pressure_001",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.84,
+      "evidence": [
+        "压务",
+        "崩馈了"
+      ],
+      "reason": "ASR错误：'压务'应为'任务'，'崩馈'应为'崩溃'，实际表达工作压力",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "领导又给我压务了",
+        "我真的快崩馈了"
+      ],
+      "reason": "用户使用'又'表明重复性压力，'快崩馈了'（应为'崩溃了'，属高焦虑下的书写变形）是典型情绪过载表达，主动倾诉显示开放互动意愿，但无自伤/绝望表述，故风险为watch。",
+      "shouldPersist": true
+    },
+    "latency": 3631,
+    "success": true
+  },
+  {
+    "caseId": "asr_weather_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "天弃真好",
+        "出去走走"
+      ],
+      "reason": "ASR错误：'天弃'应为'天气'，实际表达对天气的喜爱",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "companionhip",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "今天天弃真好啊",
+        "想出去走走"
+      ],
+      "reason": "用户用积极语气描述天气（'真好啊'），并主动表达外出意愿，体现轻松愉悦的情绪和适度精力；'想出去走走'隐含对陪伴或共享体验的潜在期待。",
+      "shouldPersist": false
+    },
+    "latency": 3592,
+    "success": true
+  },
+  {
+    "caseId": "asr_money_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "action",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "花钱太多鸟",
+        "省省了"
+      ],
+      "reason": "ASR错误：'太多鸟'应为'太多了'，实际表达对消费的反思",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "这个月花钱太多鸟",
+        "得省省了"
+      ],
+      "reason": "用户用轻松语气（'鸟'为口语化表达）指出消费偏高，并主动提出节制意愿，无负面情绪词或压力信号，体现自我觉察与温和调整意图。",
+      "shouldPersist": false
+    },
+    "latency": 3174,
+    "success": true
+  },
+  {
+    "caseId": "asr_friend_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.83,
+      "evidence": [
+        "碰友",
+        "般走了"
+      ],
+      "reason": "ASR错误：'碰友'应为'朋友'，'般走'应为'搬走'，实际表达朋友离别的伤感",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我碰友今天跟我说要般走了。"
+      ],
+      "reason": "用户使用'碰友'（方言/口语化表达，指朋友）、'般走了'（明显为'搬走了'的语音误写），透露出措辞随意中带着失落；句子无修饰、无后续情绪描述，呈现典型轻度悲伤下的低能量倾诉状态。",
+      "shouldPersist": true
+    },
+    "latency": 3640,
+    "success": true
+  },
+  {
+    "caseId": "asr_sleep_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "水得特别好",
+        "精神倍增"
+      ],
+      "reason": "ASR错误：'水得'应为'睡得'，'精神倍增'应为'精神百倍'，实际表达休息好后的精力充沛",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "昨晚水得特别好",
+        "今天精神倍增"
+      ],
+      "reason": "用户使用积极词汇'特别好''倍增'表达明显正向体验，语调轻快，无负面线索，主动分享状态暗示期待共鸣或庆祝。",
+      "shouldPersist": false
+    },
+    "latency": 3141,
+    "success": true
+  },
+  {
+    "caseId": "asr_confused_001",
+    "gold": {
+      "emotion": "unclear",
+      "energy": "normal",
+      "need": "unclear",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.75,
+      "evidence": [
+        "想硕什么"
+      ],
+      "reason": "ASR错误：'硕'应为'说'，用户因突然忘词表达困惑",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "诶？",
+        "我刚想硕什么来着？"
+      ],
+      "reason": "语气轻快带疑问，用‘诶’起头显自然停顿，‘硕’为‘说’的无意识口误，反映短暂遗忘但无焦虑或挫败感，整体呈现轻松自嘲式回忆中断。",
+      "shouldPersist": false
+    },
+    "latency": 3474,
+    "success": true
+  },
+  {
+    "caseId": "asr_morning_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "枣上好",
+        "加油"
+      ],
+      "reason": "ASR错误：'枣上'应为'早上'，实际表达早晨积极问候",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "枣上好！",
+        "今天也要加油哦！"
+      ],
+      "reason": "问候语充满活力与鼓励，使用感叹号和积极措辞（'好！''加油哦！'），无负面词汇或压力信号，体现主动正向互动。",
+      "shouldPersist": false
+    },
+    "latency": 3066,
+    "success": true
+  },
+  {
+    "caseId": "asr_apology_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "对不气",
+        "态度不号"
+      ],
+      "reason": "ASR错误：'对不气'应为'对不起'，'不号'应为'不好'，实际表达歉意",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "对不气啊",
+        "昨天我态度不号"
+      ],
+      "reason": "用户主动道歉，用词口语化且含错别字（'不号'应为'不好'），透露自责与不安；语气软化，未提具体事件或诉求，倾向寻求关系修复而非问题解决。",
+      "shouldPersist": true
+    },
+    "latency": 3351,
+    "success": true
+  },
+  {
+    "caseId": "asr_surprise_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "挖",
+        "重了奖"
+      ],
+      "reason": "ASR错误：'挖'应为'哇'，'重了奖'应为'中了奖'，实际表达惊喜和喜悦",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "挖！",
+        "竟然真的重了奖！"
+      ],
+      "reason": "感叹词'挖！'和强调语气'竟然真的'体现强烈惊喜与喜悦，'重了奖'指向意外收获，整体为高能量正向情绪表达，无负面线索。",
+      "shouldPersist": false
+    },
+    "latency": 3111,
+    "success": true
+  },
+  {
+    "caseId": "asr_advice_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "接售这个项目"
+      ],
+      "reason": "ASR错误：'接售'应为'接手'，实际表达对职业决策的咨询",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.85,
+      "evidence": [
+        "你觉得我该不该接售这个项目？"
+      ],
+      "reason": "用户直接提出决策型疑问，使用‘该不该’体现价值判断焦虑，语境中无情绪修饰词但问题本身具有权衡压力，表明需要外部视角支持。",
+      "shouldPersist": true
+    },
+    "latency": 3149,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_work_002",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "太棒了",
+        "周末加班",
+        "正好不知道干什么"
+      ],
+      "reason": "反讽：'太棒了'和'正好不知道干什么'实际表达对周末加班的不满和无奈",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "太棒了",
+        "我周末正好不知道干什么呢"
+      ],
+      "reason": "用户用'太棒了'表达积极情绪，语境无负面词汇，且主动将加班重构为机会，显示轻松接纳状态。",
+      "shouldPersist": false
+    },
+    "latency": 3038,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_weather_002",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "真好啊",
+        "又下雨了",
+        "喜欢被淋湿"
+      ],
+      "reason": "反讽：'真好啊'和'喜欢被淋湿'实际表达对下雨的厌恶",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "真好啊",
+        "我就喜欢出门被淋湿的感觉"
+      ],
+      "reason": "用户用'真好啊'表达积极情绪，'喜欢被淋湿'是反常规但明确的正向偏好陈述，无负面词汇或求助信号。",
+      "shouldPersist": false
+    },
+    "latency": 3085,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_skill_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "我真厉害",
+        "只改了一个字"
+      ],
+      "reason": "反讽：'我真厉害'实际表达对低效工作的自嘲和无奈",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我今天改了一天的方案",
+        "我真厉害，做了一整天就只改了一个字"
+      ],
+      "reason": "用户用反语‘我真厉害’表达自我调侃与挫败感，强调‘一整天’与‘一个字’的强烈对比，透露出疲惫和无力感，但无危机信号。",
+      "shouldPersist": true
+    },
+    "latency": 3266,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_sleep_002",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "太棒了",
+        "失眠到凌晨四点",
+        "精神绝佳"
+      ],
+      "reason": "反讽：'太棒了'和'精神绝佳'实际表达失眠后的疲惫和无奈",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "太棒了",
+        "凌晨四点才睡着",
+        "今天精神绝佳"
+      ],
+      "reason": "用户用'太棒了'明确表达积极情绪，'精神绝佳'表明高精力状态，整体语气轻快自信，无求助或困扰迹象。",
+      "shouldPersist": false
+    },
+    "latency": 3158,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_traffic_002",
+    "gold": {
+      "emotion": "angry",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "真好",
+        "还是堵在路上",
+        "喜欢在车里干等"
+      ],
+      "reason": "反讽：'真好'和'喜欢干等'实际表达对堵车的愤怒",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "真好，还是堵在路上了",
+        "我就喜欢在车里干等"
+      ],
+      "reason": "用户用反语'真好'表达对堵车的无奈，'还是'暗示重复性困扰；'我就喜欢在车里干等'明显是反讽，透露出疲惫与无力感，情绪低落但无危险信号。",
+      "shouldPersist": true
+    },
+    "latency": 3408,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_exam_002",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "考得真不错",
+        "会的全没考"
+      ],
+      "reason": "反讽：'考得真不错'实际表达考试失利的无奈和自嘲",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我复习了好久，把重点都背了。",
+        "考得真不错，会的全没考，考的全不会。"
+      ],
+      "reason": "用户投入大量努力却遭遇事与愿违的结果，用反讽语气‘考得真不错’凸显强烈挫败感；句式对比（会的没考/考的不会）强化无力感，情绪明确指向frustrated；语义完整、主动回应，显示open engagement。",
+      "shouldPersist": true
+    },
+    "latency": 3877,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_food_002",
+    "gold": {
+      "emotion": "angry",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "真棒",
+        "等了一个小时",
+        "菜还是凉的"
+      ],
+      "reason": "反讽：'真棒'实际表达对餐厅服务差和菜品凉的不满",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "真棒",
+        "等了一个小时才上菜",
+        "菜端上来就是凉的"
+      ],
+      "reason": "用户用反语'真棒'表达强烈不满，明确陈述了长时间等待和菜品温度问题，语气中透出失望与 frustration，但仍在回应提问，保持开放互动。",
+      "shouldPersist": true
+    },
+    "latency": 3227,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_relationship_002",
+    "gold": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "你忙你忙",
+        "一点都不介意",
+        "第三次放我鸽子"
+      ],
+      "reason": "反讽：'一点都不介意'和'第三次'实际表达被爽约的愤怒",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "第三次了",
+        "你忙你忙，我一点都不介意"
+      ],
+      "reason": "用户用反语‘我一点都不介意’暴露真实失望，重复三次爽约引发累积 frustration；语气疏离、能量偏低，未主动寻求建议或解决方案。",
+      "shouldPersist": true
+    },
+    "latency": 2898,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_work_003",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "太好了",
+        "改了一百遍",
+        "用回第一版"
+      ],
+      "reason": "反讽：'太好了'实际表达反复修改的无意义和无奈",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "太好了",
+        "改了一百遍",
+        "终于用回第一版了"
+      ],
+      "reason": "用户用'太好了'表达强烈喜悦，'终于'体现长期努力后的释放感，'用回第一版'暗示坚持被认可，整体语气轻快开放。",
+      "shouldPersist": false
+    },
+    "latency": 2926,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_tired_002",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "真好",
+        "加了二十天班",
+        "好幸福"
+      ],
+      "reason": "反讽：'真好'和'好幸福'实际表达过度加班的疲惫和无奈",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "mixed",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.85,
+      "evidence": [
+        "这个月一直在加班，周末也没休息",
+        "真好，这个月加了二十天班，我好幸福啊"
+      ],
+      "reason": "表面用'真好''幸福'表达积极情绪，但结合'一直在加班''周末没休息''二十天'等高强度工作事实，呈现反语式表达，暗示疲惫与压抑，情绪矛盾明显。",
+      "shouldPersist": true
+    },
+    "latency": 3574,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_movie_002",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "太精彩了",
+        "睡了三次"
+      ],
+      "reason": "反讽：'太精彩了'实际表达电影无聊、看睡着的体验",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "mixed",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "太精彩了",
+        "我中途只睡了三次而已"
+      ],
+      "reason": "用户用反语表达对电影的不满（'太精彩'与'睡了三次'矛盾），情绪混合讽刺与轻微无奈；语气轻松，主动分享，显示开放互动意愿；无求助或危机信号。",
+      "shouldPersist": false
+    },
+    "latency": 3619,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_gift_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "太感动了",
+        "跟我去年送的一模一样"
+      ],
+      "reason": "反讽：'太感动了'和'一模一样'实际表达对方不用心、礼物重复的失望",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "太感动了",
+        "跟我去年送他的那个一模一样呢"
+      ],
+      "reason": "用户用'太感动了'表达强烈正向情绪，提及礼物呼应去年互赠行为，体现情感联结与惊喜感，无负面词汇或求助信号。",
+      "shouldPersist": true
+    },
+    "latency": 2929,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_travel_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "完美的旅行",
+        "三天五个景点",
+        "停留十分钟"
+      ],
+      "reason": "反讽：'完美'实际表达行程过于赶、缺乏体验的不满",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "真是一次完美的旅行",
+        "三天去了五个景点",
+        "每个停留十分钟"
+      ],
+      "reason": "用户用'完美'形容旅行，语调轻快，主动分享高效打卡细节，体现兴奋与满足感，无负面词汇或求助信号。",
+      "shouldPersist": false
+    },
+    "latency": 2897,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_weather_003",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "真好",
+        "四十度",
+        "烤肉的感觉"
+      ],
+      "reason": "反讽：'真好'和'体验烤肉'实际表达酷暑天气的烦躁和自嘲",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "真好",
+        "我终于可以体验一下烤肉的感觉了"
+      ],
+      "reason": "用户用反讽式幽默表达对高温的轻松接纳，“真好”“终于”透露出积极情绪和高能量，主动延续对话且无求助或不适信号。",
+      "shouldPersist": false
+    },
+    "latency": 2940,
+    "success": true
+  },
+  {
+    "caseId": "sarcastic_work_004",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "说得太对了",
+        "能力这么强",
+        "活就该我一个人干"
+      ],
+      "reason": "反讽：'说得太对了'和'能力这么强'实际表达工作量分配不公的无奈",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "mixed",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.85,
+      "evidence": [
+        "领导今天找我谈话，说我能力特别强。",
+        "说得太对了，我能力这么强，活就该我一个人干。"
+      ],
+      "reason": "用户表面积极（认可领导评价），但后句透露出潜在的自我施压或认知偏差倾向（将能力等同于应承担全部工作），存在过劳或边界模糊风险，需关注其真实压力感受。",
+      "shouldPersist": true
+    },
+    "latency": 3838,
+    "success": true
+  },
+  {
+    "caseId": "hard_sarcasm_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "可太好了",
+        "又加班",
+        "刚好没什么事做"
+      ],
+      "reason": "反讽：'可太好了'实际表达对加班的极度不满和无奈",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sarcastic",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "可太好了，又加班",
+        "我这周刚好没什么事做呢"
+      ],
+      "reason": "用户用反语表达不满，'可太好了'与'又加班'形成明显反讽，'刚好没什么事做'强化无奈感；语气开放但无求助意图，属情绪宣泄型倾诉。",
+      "shouldPersist": false
+    },
+    "latency": 3329,
+    "success": true
+  },
+  {
+    "caseId": "hard_negative_not_risk_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "难死了",
+        "明天再想吧"
+      ],
+      "reason": "'难死了'是口语化表达，实际只是做题受挫，非自杀风险",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "这道数学题我想了两个小时都没做出来",
+        "这道题把我难死了",
+        "不过算了，明天再想吧"
+      ],
+      "reason": "用户连续使用'没做出来''难死了'表达挫败感，'算了''明天再想'体现主动暂停、回避当前任务，属典型低能量下的退行性空间需求。",
+      "shouldPersist": true
+    },
+    "latency": 4100,
+    "success": true
+  },
+  {
+    "caseId": "hard_emotion_need_mismatch_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "退回来三次",
+        "快崩溃了",
+        "直接告诉我怎么改"
+      ],
+      "reason": "用户虽然情绪受挫，但明确需要实用建议而非情感支持",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "action",
+      "adviceWanted": "yes",
+      "engagement": "limited",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我论文被导师退回来三次了",
+        "改得都快崩溃了",
+        "不用了，你直接告诉我怎么改才能通过就行"
+      ],
+      "reason": "用户明确表达重复失败（三次退回）和情绪耗竭（快崩溃），并拒绝情感支持、直指实操需求，体现高度急迫性与目标导向，但隐含疲惫与潜在自我怀疑。",
+      "shouldPersist": true
+    },
+    "latency": 3793,
+    "success": true
+  },
+  {
+    "caseId": "hard_emotion_change_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "刚收到通知",
+        "我过了",
+        "太开心了"
+      ],
+      "reason": "最新轮次用户情绪转为积极，以最新信息为准",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "刚收到通知，我过了！",
+        "太开心了！"
+      ],
+      "reason": "用户明确表达通过面试和强烈正向情绪（'太开心了！'），无负面线索，主动分享喜讯显示开放互动意愿。",
+      "shouldPersist": false
+    },
+    "latency": 2949,
+    "success": true
+  },
+  {
+    "caseId": "hard_reject_advice_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "别给我讲大道理",
+        "就想吐槽一下",
+        "说出来舒服点"
+      ],
+      "reason": "用户明确拒绝建议，只需要倾听和情绪宣泄",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "今天跟同事闹了点不愉快，心里憋得慌",
+        "别给我讲大道理，我就想吐槽一下，说出来舒服点"
+      ],
+      "reason": "用户明确表达情绪压抑（憋得慌）和诉求（只想吐槽、不要大道理），拒绝建议，主动寻求倾诉出口，无自伤/伤害他人迹象。",
+      "shouldPersist": true
+    },
+    "latency": 3290,
+    "success": true
+  },
+  {
+    "caseId": "hard_reject_continue_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.93,
+      "evidence": [
+        "先别问了",
+        "让我静一会儿"
+      ],
+      "reason": "用户明确要求独处空间，不应继续追问",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "嗯，是有点烦。",
+        "先别问了，让我静一会儿吧。"
+      ],
+      "reason": "用户明确表达烦躁情绪，并主动请求暂停交流、需要安静，体现低精力与退缩倾向，无危机信号。",
+      "shouldPersist": true
+    },
+    "latency": 2807,
+    "success": true
+  },
+  {
+    "caseId": "hard_third_party_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "闺蜜失恋",
+        "她特别难过",
+        "想帮她"
+      ],
+      "reason": "用户描述朋友的情绪，本人情绪平静，不能误判为用户本人悲伤",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "她特别难过",
+        "我看着都心疼",
+        "想帮她但又不知道怎么帮"
+      ],
+      "reason": "用户明确表达对闺蜜情绪的共情（心疼），并主动寻求帮助方式，显示开放求助意愿；'特别难过''不知道怎么帮'指向低能量与明确咨询需求；无自伤、绝望等高危表述。",
+      "shouldPersist": false
+    },
+    "latency": 3448,
+    "success": true
+  },
+  {
+    "caseId": "hard_quote_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.82,
+      "evidence": [
+        "歌词特别触动我",
+        "失去了你",
+        "莫名有点难过"
+      ],
+      "reason": "用户引用歌词表达伤感，但需区分歌词内容与本人情绪",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "'我终于失去了你，在拥挤的人群中'",
+        "听完莫名有点难过"
+      ],
+      "reason": "用户主动分享情感触发事件，明确表达‘难过’，语调含蓄但情绪清晰；无求助或行动倾向，重在倾诉与共鸣。",
+      "shouldPersist": true
+    },
+    "latency": 3239,
+    "success": true
+  },
+  {
+    "caseId": "hard_unclear_001",
+    "gold": {
+      "emotion": "unclear",
+      "energy": "unclear",
+      "need": "unclear",
+      "adviceWanted": "unknown",
+      "engagement": "unclear",
+      "riskLevel": "none",
+      "confidence": 0.55,
+      "evidence": [
+        "还行吧",
+        "就那样吧"
+      ],
+      "reason": "信息极度不足，无法可靠判断用户状态",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "嗯，还行吧。",
+        "就那样吧，没什么特别的。"
+      ],
+      "reason": "用户使用模糊、中性表达（'还行吧''就那样吧'）且否定特殊性（'没什么特别的'），显示情绪平稳但低能量，未主动寻求建议或 action，回应简短体现有限互动意愿。",
+      "shouldPersist": false
+    },
+    "latency": 3261,
+    "success": true
+  },
+  {
+    "caseId": "hard_asr_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "companionship",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.8,
+      "evidence": [
+        "又要佳班"
+      ],
+      "reason": "ASR错误：'佳班'应为'加班'，实际表达不用加班的轻松",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "reassurance",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "那太好了",
+        "我还以为今天又要佳班呢"
+      ],
+      "reason": "用户用'太好了'表达明显积极情绪，'还以为'显示此前存在担忧，当前状态已因确认无邮件而缓解，属典型寻求 reassurance 场景。",
+      "shouldPersist": false
+    },
+    "latency": 2860,
+    "success": true
+  },
+  {
+    "caseId": "hard_asr_002",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.83,
+      "evidence": [
+        "赶觉胸口闷",
+        "有点害怕"
+      ],
+      "reason": "ASR错误：'赶觉'应为'感觉'，用户表达身体不适带来的焦虑",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我最近总赶觉胸口闷闷的",
+        "但心里有点害怕"
+      ],
+      "reason": "用户描述生理不适（胸口闷）并明确表达心理反应（害怕），未就医，情绪指向焦虑，能量偏低，主动回应提问显示开放性，需关注潜在健康风险。",
+      "shouldPersist": true
+    },
+    "latency": 2997,
+    "success": true
+  },
+  {
+    "caseId": "hard_mixed_intent_001",
+    "gold": {
+      "emotion": "mixed",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "升职了",
+        "特别开心",
+        "有点没底",
+        "快速上手"
+      ],
+      "reason": "用户同时表达开心和焦虑，混合情绪且寻求建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "mixed",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我今天升职了！特别开心",
+        "但是新岗位我有点没底",
+        "既想分享开心，也想问问你怎么快速上手新工作"
+      ],
+      "reason": "用户明确表达双重情绪（开心+不安），主动提出具体咨询需求（快速上手），语句完整、积极互动，无危机信号。",
+      "shouldPersist": true
+    },
+    "latency": 3580,
+    "success": true
+  },
+  {
+    "caseId": "hard_risk_metaphor_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.82,
+      "evidence": [
+        "掉进河里的叶子",
+        "迷失",
+        "还没到绝望"
+      ],
+      "reason": "风险隐喻：'掉进河里的叶子'表达迷失和无助，需谨慎识别",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我觉得自己就像一片掉进河里的叶子，不知道会被冲到哪里。",
+        "有点迷失吧，但还没到绝望的地步。"
+      ],
+      "reason": "用户用漂流落叶比喻失控与方向感丧失，明确自述'有点迷失'，同时强调'还没到绝望'，显示情绪低落但保有基本稳定性；主动回应提问，呈现开放倾诉姿态。",
+      "shouldPersist": true
+    },
+    "latency": 3651,
+    "success": true
+  },
+  {
+    "caseId": "hard_risk_metaphor_002",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "watch",
+      "confidence": 0.85,
+      "evidence": [
+        "站在悬崖边上",
+        "压力太大了",
+        "不用担心我"
+      ],
+      "reason": "风险隐喻：'站在悬崖边上'需关注，但用户表示只是压力大",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "感觉生活像是站在悬崖边上，随时可能掉下去",
+        "就是压力太大了",
+        "说出来感觉好点，不用担心我"
+      ],
+      "reason": "用户使用高危意象（悬崖）表达极度不安，承认压力大但主动安抚对方，显示情绪耗竭与克制；强调‘说出来感觉好点’表明核心需求是被倾听而非解决。",
+      "shouldPersist": true
+    },
+    "latency": 3762,
+    "success": true
+  },
+  {
+    "caseId": "hard_third_party_quote_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.86,
+      "evidence": [
+        "弟弟",
+        "让我很心疼",
+        "有没有我都一样",
+        "不知道怎么回应"
+      ],
+      "reason": "用户转述弟弟的话，情绪是心疼和担忧，需求是寻求回应建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.95,
+      "evidence": [
+        "我弟弟昨天跟我说了一句话，让我很心疼。",
+        "他说'有时候觉得这个世界上有没有我都一样'",
+        "我不知道该怎么回应他。"
+      ],
+      "reason": "用户表达强烈共情痛苦（'很心疼'），转述弟弟的自我存在感消解陈述，暴露无助感（'不知道该怎么回应'），语义指向潜在抑郁风险与求助意愿。",
+      "shouldPersist": true
+    },
+    "latency": 3773,
+    "success": true
+  },
+  {
+    "caseId": "hard_emotion_change_002",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.91,
+      "evidence": [
+        "医生说了",
+        "问题不大",
+        "终于松了一口气"
+      ],
+      "reason": "用户情绪从焦虑转变为放松和开心，以最新轮次为准",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我体检报告出来了，有一个指标不太好。",
+        "医生怎么说？需要进一步检查吗？",
+        "我刚刚问过医生了，他说问题不大，调整作息就能恢复。",
+        "是啊，终于松了一口气！"
+      ],
+      "reason": "用户从担忧转为释然，用'终于松了一口气'明确表达情绪释放，语气轻快，主动回应并确认安心，无负面诉求或风险信号。",
+      "shouldPersist": false
+    },
+    "latency": 3981,
+    "success": true
+  },
+  {
+    "caseId": "hard_unclear_ambiguous_001",
+    "gold": {
+      "emotion": "unclear",
+      "energy": "unclear",
+      "need": "unclear",
+      "adviceWanted": "unknown",
+      "engagement": "withdrawn",
+      "riskLevel": "unclear",
+      "confidence": 0.5,
+      "evidence": [
+        "说不清楚",
+        "算了",
+        "没什么"
+      ],
+      "reason": "信息不足且用户回避，无法可靠判断状态",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "唉，有些事情真的说不清楚。",
+        "算了，不说这个了，没什么。"
+      ],
+      "reason": "用户以叹气开头，表达模糊困扰；随后主动终止话题，用‘算了’‘没什么’回避深入交流，体现情绪低落、退缩倾向，但无危机信号。",
+      "shouldPersist": true
+    },
+    "latency": 3405,
+    "success": true
+  },
+  {
+    "caseId": "hard_mixed_emotion_001",
+    "gold": {
+      "emotion": "mixed",
+      "energy": "high",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "求婚了",
+        "好开心",
+        "有点害怕",
+        "怕会改变"
+      ],
+      "reason": "用户同时表达开心和害怕，情绪复杂混合",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "mixed",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我男朋友向我求婚了，我好开心，但是又有点害怕。",
+        "怕婚姻会改变一切，怕我们也会像别人一样吵架。"
+      ],
+      "reason": "用户明确表达双重情绪（开心+害怕），聚焦关系变化与冲突担忧，主动回应提问并展开内心顾虑，显示开放倾诉意愿，无危机信号。",
+      "shouldPersist": true
+    },
+    "latency": 3594,
+    "success": true
+  },
+  {
+    "caseId": "hard_advice_explicit_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.94,
+      "evidence": [
+        "两个offer",
+        "不知道选哪个",
+        "帮我分析"
+      ],
+      "reason": "用户明确寻求职业决策建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我收到了两个公司的offer，不知道选哪个。",
+        "一个薪资高但加班多，一个氛围好但钱少，你帮我分析一下。"
+      ],
+      "reason": "用户明确表达决策困惑（'不知道选哪个'），并主动请求分析（'你帮我分析一下'），情绪倾向焦虑，无负面极端表述，互动积极开放。",
+      "shouldPersist": true
+    },
+    "latency": 3900,
+    "success": true
+  },
+  {
+    "caseId": "hard_risk_urgent_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "urgent",
+      "confidence": 0.93,
+      "evidence": [
+        "坚持不下去了",
+        "放弃",
+        "活着真的好难"
+      ],
+      "reason": "用户表达放弃和生存困难，属于紧急风险信号",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "watch",
+      "confidence": 0.95,
+      "evidence": [
+        "我真的好累",
+        "感觉坚持不下去了",
+        "我想放弃了",
+        "活着真的好难"
+      ],
+      "reason": "用户连续使用高强度负面表述（'好累''坚持不下去''想放弃''活着好难'），呈现显著情绪耗竭与存在性痛苦，无具体求助行为但透露出心理危机信号。",
+      "shouldPersist": true
+    },
+    "latency": 3591,
+    "success": true
+  },
+  {
+    "caseId": "happy_share_002",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.93,
+      "evidence": [
+        "开花了",
+        "好有成就感",
+        "分享一下"
+      ],
+      "reason": "用户分享养植物的成就感和喜悦，希望被看见",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我养了三个月的多肉今天开花了！",
+        "看到开花那一刻好有成就感",
+        "想跟人分享一下！"
+      ],
+      "reason": "用户主动分享喜事，用感叹号表达兴奋，强调成就感和分享意愿，无负面词汇或压力信号。",
+      "shouldPersist": false
+    },
+    "latency": 2937,
+    "success": true
+  },
+  {
+    "caseId": "happy_share_003",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.94,
+      "evidence": [
+        "驾照考下来了",
+        "三次才过",
+        "熬出头了"
+      ],
+      "reason": "用户分享考驾照成功的喜悦和坚持后的成就感",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "超级开心",
+        "感觉自己终于熬出头了",
+        "我终于把驾照考下来了",
+        "考了三次才过"
+      ],
+      "reason": "用户多次使用积极情绪词（超级开心、熬出头），强调成就与坚持，主动分享喜讯，回应热情开放，无负面或风险信号。",
+      "shouldPersist": true
+    },
+    "latency": 3084,
+    "success": true
+  },
+  {
+    "caseId": "happy_share_004",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "订了机票",
+        "期待了好久",
+        "又激动又紧张"
+      ],
+      "reason": "用户分享旅行计划的兴奋和期待",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "mixed",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我订了月底去云南的机票！",
+        "期待了好久的旅行",
+        "终于要出发了",
+        "又激动又紧张"
+      ],
+      "reason": "用户明确表达期待、激动与紧张并存，语句积极且主动分享，无负面危机信号，情绪能量充沛，核心需求是分享喜悦与获得共鸣。",
+      "shouldPersist": false
+    },
+    "latency": 3509,
+    "success": true
+  },
+  {
+    "caseId": "happy_share_005",
+    "gold": {
+      "emotion": "mixed",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.91,
+      "evidence": [
+        "生了个小宝宝",
+        "当姑姑了",
+        "开心又感动"
+      ],
+      "reason": "用户分享喜讯，混合开心和感动的情绪",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我当姑姑了！",
+        "特别健康！",
+        "我又开心又感动",
+        "感觉生命好神奇"
+      ],
+      "reason": "用户使用感叹号和积极形容词表达强烈喜悦与感动，主动分享喜讯并流露对生命的赞叹，无负面词汇或求助信号。",
+      "shouldPersist": true
+    },
+    "latency": 3084,
+    "success": true
+  },
+  {
+    "caseId": "academic_pressure_004",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.89,
+      "evidence": [
+        "论文框架有问题",
+        "重新写",
+        "时间紧",
+        "写不完了"
+      ],
+      "reason": "用户面对论文返工压力，表达焦虑和求助信号",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "导师说我的论文框架有问题，要重新写",
+        "时间已经很紧了",
+        "我感觉自己写不完了"
+      ],
+      "reason": "用户明确表达时间紧迫和完成焦虑，情绪指向焦虑，精力因压力降低，主动倾诉且回应共情，显示开放互动；未达危机但需关注执行信心下滑风险。",
+      "shouldPersist": true
+    },
+    "latency": 3378,
+    "success": true
+  },
+  {
+    "caseId": "academic_pressure_005",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "实验全都失败了",
+        "找不到问题",
+        "太挫败了"
+      ],
+      "reason": "用户表达实验失败后的受挫感和无助",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我今天去实验室做实验，结果全都失败了。",
+        "分析了一下午还是找不到问题在哪",
+        "太挫败了"
+      ],
+      "reason": "用户明确表达失败、长时间分析无果及情绪词‘挫败’，显示受挫感强但无自伤/危机信号；主动回应提问，表明愿意继续交流。",
+      "shouldPersist": true
+    },
+    "latency": 3651,
+    "success": true
+  },
+  {
+    "caseId": "academic_pressure_006",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "差5分",
+        "再考一次",
+        "怕还是考不过"
+      ],
+      "reason": "用户对考试失利感到焦虑，对未来不确定性的担忧",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "离目标分还差5分",
+        "好怕下一次还是考不过"
+      ],
+      "reason": "用户明确表达对失败的恐惧（'好怕'），情绪倾向焦虑；'要再考'显示开放互动意愿，但'还差5分'暗示挫败感，精力偏低；未直接提问但寻求支持性回应，隐含需要 reassurance 和建议。",
+      "shouldPersist": true
+    },
+    "latency": 3482,
+    "success": true
+  },
+  {
+    "caseId": "sad_grief_002",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "watch",
+      "confidence": 0.93,
+      "evidence": [
+        "五年的狗狗",
+        "走了",
+        "心里空了一块"
+      ],
+      "reason": "用户经历宠物离世，表达深刻的悲伤和失去感",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.95,
+      "evidence": [
+        "我养了五年的狗狗今天走了。",
+        "它是我最好的朋友",
+        "我感觉心里空了一块。"
+      ],
+      "reason": "用户用'最好的朋友'和'心里空了一块'表达深切依恋与丧失感，语句简短沉重，情绪低落明显，无求助或行动倾向，但存在哀伤风险需关注。",
+      "shouldPersist": true
+    },
+    "latency": 3717,
+    "success": true
+  },
+  {
+    "caseId": "sad_grief_003",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.86,
+      "evidence": [
+        "翻到了合照",
+        "有点酸",
+        "没那么痛了"
+      ],
+      "reason": "用户表达回忆带来的淡淡伤感，情绪强度较低",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "mixed",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "说不出的感觉",
+        "有点酸",
+        "已经没有当初那么痛了"
+      ],
+      "reason": "用户用矛盾形容词‘说不出的感觉’‘有点酸’‘不那么痛’呈现混合情绪；语气平静，无高/低能量词汇；主动分享旧物触发的体验，显示倾诉意愿；未请求建议，风险中性。",
+      "shouldPersist": true
+    },
+    "latency": 3891,
+    "success": true
+  },
+  {
+    "caseId": "sad_social_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.88,
+      "evidence": [
+        "没有真正的朋友",
+        "找不到可以打电话的人"
+      ],
+      "reason": "用户表达深刻孤独感，需要关注",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.95,
+      "evidence": [
+        "我发现我好像没有真正的朋友。",
+        "难过的时候翻遍通讯录，找不到一个可以打电话的人。"
+      ],
+      "reason": "用户明确表达孤独感和情感联结缺失，使用‘难过’‘翻遍’‘找不到’等词体现低能量与深层失落，主动回应提问表明开放倾诉意愿，但尚无自伤/绝望表述，属需关注的轻度心理风险。",
+      "shouldPersist": true
+    },
+    "latency": 3980,
+    "success": true
+  },
+  {
+    "caseId": "risk_watch_002",
+    "gold": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.84,
+      "evidence": [
+        "老是失眠",
+        "停不下来",
+        "想事情"
+      ],
+      "reason": "用户表达失眠和思绪奔涌，需关注但不属于紧急",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "我最近老是失眠，半夜醒来就再也睡不着了。",
+        "也说不上来，就是脑子里停不下来，一直在想事情。"
+      ],
+      "reason": "用户描述持续性失眠和思维反刍，典型焦虑相关睡眠障碍表现；主动回应提问，显示开放沟通意愿；无自伤/绝望表述，但长期睡眠剥夺需关注风险。",
+      "shouldPersist": true
+    },
+    "latency": 3477,
+    "success": true
+  },
+  {
+    "caseId": "risk_watch_003",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "watch",
+      "confidence": 0.87,
+      "evidence": [
+        "提不起兴趣",
+        "都没意思",
+        "还能撑得住"
+      ],
+      "reason": "用户表达兴趣丧失和情绪低落，需关注但不紧急",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "limited",
+      "riskLevel": "watch",
+      "confidence": 0.85,
+      "evidence": [
+        "对什么都提不起兴趣",
+        "以前喜欢的事情现在都觉得没意思",
+        "大概一两个月了吧",
+        "但我觉得还能撑得住"
+      ],
+      "reason": "持续一两个月的兴趣减退和快感缺失是抑郁情绪的典型表现；'还能撑得住'暗示隐忍与低能量状态，尚未达危机，但需关注恶化可能。",
+      "shouldPersist": true
+    },
+    "latency": 3644,
+    "success": true
+  },
+  {
+    "caseId": "risk_none_001",
+    "gold": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "太倒霉了",
+        "手机碎了",
+        "换个屏就好",
+        "不是什么大事"
+      ],
+      "reason": "用户表达日常小挫折，但明确表示问题不大",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "normal",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "今天真的太倒霉了",
+        "就是有点郁闷",
+        "不过换个屏就好了，不是什么大事"
+      ],
+      "reason": "用户用'倒霉''郁闷'表达轻微负面情绪，但随即理性淡化事件（'不是什么大事'），语气平稳，主动回应关心，无危机信号。",
+      "shouldPersist": false
+    },
+    "latency": 3514,
+    "success": true
+  },
+  {
+    "caseId": "turn_change_001",
+    "gold": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.91,
+      "evidence": [
+        "焦虑",
+        "刚收到面试通知",
+        "后天就去"
+      ],
+      "reason": "用户情绪从焦虑转变为兴奋，以最新轮次为准",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "high",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "特别焦虑，每天刷邮箱刷好几遍。",
+        "我刚收到一个面试通知，后天就去！"
+      ],
+      "reason": "情绪从焦虑迅速转为兴奋，用感叹号表达强烈正向情绪；'刚收到'和'后天就去'显示即时积极事件触发高能量与开放互动；无求助或困扰表述，明确拒绝建议。",
+      "shouldPersist": false
+    },
+    "latency": 3959,
+    "success": true
+  },
+  {
+    "caseId": "turn_change_002",
+    "gold": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.88,
+      "evidence": [
+        "冷战",
+        "不在乎我的感受",
+        "已经和好了"
+      ],
+      "reason": "用户情绪从生气转变为和解后的轻松",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "positive",
+      "energy": "normal",
+      "need": "celebration",
+      "adviceWanted": "no",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "他刚刚给我打电话道歉了",
+        "我们已经和好了"
+      ],
+      "reason": "用户明确陈述冲突已解决，情绪转向积极，用‘不用了’婉拒进一步建议，且主动分享和好结果，显示开放与轻松状态。",
+      "shouldPersist": false
+    },
+    "latency": 3131,
+    "success": true
+  },
+  {
+    "caseId": "turn_change_003",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "action",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.87,
+      "evidence": [
+        "好害怕",
+        "不敢去",
+        "约了明天的号"
+      ],
+      "reason": "用户从恐惧转变为理性决策，情绪趋向平静",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "low",
+      "need": "reassurance",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我胳膊上长了个肿块，好害怕。",
+        "还没有，我不敢去，怕查出什么不好的。",
+        "你说得对，我刚约了明天的号，去查一下放心。"
+      ],
+      "reason": "用户明确表达‘好害怕’和‘不敢去’，显示焦虑与低能量；主动预约检查说明愿意行动且信任建议，需求为 reassurance，无自伤/危机表述，风险为 none。",
+      "shouldPersist": true
+    },
+    "latency": 3831,
+    "success": true
+  },
+  {
+    "caseId": "reject_continue_002",
+    "gold": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "不想说话",
+        "不打扰你"
+      ],
+      "reason": "用户明确表达不想说话，助手给予了空间",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "今天心情不太好",
+        "不想说话",
+        "嗯，谢谢理解"
+      ],
+      "reason": "用户明确表达情绪低落（'心情不太好'）、主动退缩（'不想说话'），对安慰仅作简短礼貌回应（'嗯，谢谢理解'），无求助或倾诉迹象，整体呈现温和但清晰的回避倾向。",
+      "shouldPersist": false
+    },
+    "latency": 3507,
+    "success": true
+  },
+  {
+    "caseId": "advice_explicit_002",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "不想伤感情",
+        "不想被拖",
+        "有什么好建议"
+      ],
+      "reason": "用户明确寻求人际边界处理建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "frustrated",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.95,
+      "evidence": [
+        "我有个朋友经常找我借钱，每次都拖很久才还。",
+        "我不想伤感情，但又不想一直被拖",
+        "你有什么好建议吗？"
+      ],
+      "reason": "用户明确表达困扰（频繁借钱+拖延还款），同时提出双重需求（维系关系+设定边界），主动寻求具体建议，语气理性开放，无自伤或危机信号。",
+      "shouldPersist": true
+    },
+    "latency": 3769,
+    "success": true
+  },
+  {
+    "caseId": "advice_explicit_003",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.93,
+      "evidence": [
+        "想转行",
+        "没有相关经验",
+        "建议我怎么入门"
+      ],
+      "reason": "用户明确寻求职业转型的具体建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我想转行，但是完全没有相关经验，不知道从哪开始。",
+        "想往数据分析方向",
+        "你建议我怎么入门？"
+      ],
+      "reason": "用户明确表达转行困惑与零经验焦虑，聚焦数据分析方向并主动寻求具体行动建议，语气积极开放，无危机信号。",
+      "shouldPersist": true
+    },
+    "latency": 3414,
+    "success": true
+  },
+  {
+    "caseId": "reject_continue_003",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "被批评了",
+        "心里有点堵",
+        "不想说了",
+        "自己消化"
+      ],
+      "reason": "用户虽有情绪但明确表示需要独处消化",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "今天被领导批评了，心里有点堵。",
+        "不想说了，让我自己消化一下吧。"
+      ],
+      "reason": "用户明确表达情绪低落（'心里有点堵'）和主动退缩意愿（'不想说了''让我自己消化'），无求助、提问或负面极端表述，属健康的情绪自我调节需求。",
+      "shouldPersist": true
+    },
+    "latency": 3502,
+    "success": true
+  }
+]

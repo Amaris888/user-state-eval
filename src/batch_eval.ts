@@ -8,6 +8,7 @@ import type { Case } from "./schemas";
 const DATASET_PATH = "./datasets/dev.jsonl";
 const MODEL_ID = "qwen-plus"; // 可换成 qwen-turbo 或 doubao-pro
 export { DATASET_PATH, MODEL_ID };
+
 // ========== 批量评测 ==========
 async function batchEvaluate(
   datasetPath: string,

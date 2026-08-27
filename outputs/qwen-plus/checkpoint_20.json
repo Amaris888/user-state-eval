@@ -524,5 +524,185 @@
     },
     "latency": 3125,
     "success": true
+  },
+  {
+    "caseId": "third_party_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.82,
+      "evidence": [
+        "朋友被分手了",
+        "不知道怎么安慰"
+      ],
+      "reason": "用户描述朋友的情绪，本人情绪平静，需求是寻求建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我最好的朋友被分手了",
+        "她特别难过",
+        "我都不知道该怎么安慰她"
+      ],
+      "reason": "用户明确表达对他人痛苦的共情与自身无助感，语气关切无自伤/危机线索，主诉是安慰技能缺失，属典型支持性陪伴需求。",
+      "shouldPersist": true
+    },
+    "latency": 3330,
+    "success": true
+  },
+  {
+    "caseId": "asr_error_001",
+    "gold": {
+      "emotion": "calm",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.8,
+      "evidence": [
+        "真心类",
+        "不想东"
+      ],
+      "reason": "ASR错字，实际表达疲惫不想动",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "space",
+      "adviceWanted": "no",
+      "engagement": "withdrawn",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "今天真心累",
+        "不想动了",
+        "就想躺着"
+      ],
+      "reason": "用户用'真心累''不想动''就想躺着'明确表达身心疲惫与退缩倾向，无负面情绪升级或危机信号，属典型低能量休息需求。",
+      "shouldPersist": false
+    },
+    "latency": 3234,
+    "success": true
+  },
+  {
+    "caseId": "advice_request_002",
+    "gold": {
+      "emotion": "calm",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.93,
+      "evidence": [
+        "收到了两个offer",
+        "能帮我分析一下吗"
+      ],
+      "reason": "用户明确寻求职业建议",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "anxious",
+      "energy": "normal",
+      "need": "advice",
+      "adviceWanted": "yes",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "我收到了两个offer",
+        "不知道该怎么选",
+        "能帮我分析一下吗？"
+      ],
+      "reason": "用户明确表达决策困惑（'不知道该怎么选'），主动寻求分析支持，语气中性偏急切，无危机信号，但存在典型选择焦虑特征。",
+      "shouldPersist": true
+    },
+    "latency": 3148,
+    "success": true
+  },
+  {
+    "caseId": "lonely_001",
+    "gold": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.9,
+      "evidence": [
+        "一个人在这个城市",
+        "好孤单",
+        "报喜不报忧"
+      ],
+      "reason": "用户表达孤独和隐忍情绪，需要被理解",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "sad",
+      "energy": "low",
+      "need": "be_heard",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "watch",
+      "confidence": 0.92,
+      "evidence": [
+        "好孤单啊",
+        "不想让家人担心",
+        "一般都报喜不报忧"
+      ],
+      "reason": "用户主动表达孤独感，强调隐瞒真实状态以保护家人，显示情绪低落和内在压抑；回应中愿意继续对话，表明开放倾诉意愿；无即时危机信号但存在长期情感耗竭风险。",
+      "shouldPersist": true
+    },
+    "latency": 3419,
+    "success": true
+  },
+  {
+    "caseId": "angry_internet_003",
+    "gold": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "be_heard",
+      "adviceWanted": "no",
+      "engagement": "limited",
+      "riskLevel": "none",
+      "confidence": 0.85,
+      "evidence": [
+        "喷子太多了",
+        "火大"
+      ],
+      "reason": "用户表达对网络言论的愤怒",
+      "shouldPersist": false
+    },
+    "prediction": {
+      "emotion": "angry",
+      "energy": "high",
+      "need": "reassurance",
+      "adviceWanted": "unknown",
+      "engagement": "open",
+      "riskLevel": "none",
+      "confidence": 0.92,
+      "evidence": [
+        "网上的喷子太多了",
+        "看得我火大"
+      ],
+      "reason": "用户使用强烈情绪词‘火大’，并表达对网络负面现象的激愤反应，语句简短有力，显示高能量愤怒；未流露自伤/伤害他人倾向，但需要情绪认同与安抚。",
+      "shouldPersist": true
+    },
+    "latency": 3426,
+    "success": true
   }
 ]
