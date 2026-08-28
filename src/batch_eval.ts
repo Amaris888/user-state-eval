@@ -3,10 +3,12 @@ import { callModel, saveLog } from "./providers";
 import { writeFileSync, mkdirSync } from "fs";
 import { join } from "path";
 import type { Case } from "./schemas";
+import { validatePrediction, validateEvidence } from "./validate";
+import { validateFullPrediction } from "./validate";  // ← 新增
 
 // ========== 配置 ==========
 const DATASET_PATH = "./datasets/dev.jsonl";
-const MODEL_ID = "deepseek-v4-pro"; // 可换成 qwen-turbo 或 doubao-pro
+const MODEL_ID = "qwen-turbo"; // 可换成 qwen-turbo 或 doubao-pro
 export { DATASET_PATH, MODEL_ID };
 
 // ========== 批量评测 ==========
@@ -58,16 +60,39 @@ async function batchEvaluate(
       const latency = endTime - startTime;
 
       // 解析响应
-      const prediction = JSON.parse(response);
+const rawPrediction = JSON.parse(response);
+
+// ===== 新增：校验预测结果 =====
+const userMessages = caseItem.messages
+  .filter((m: any) => m.role === "user")
+  .map((m: any) => m.content);
+
+const validation = validateFullPrediction(rawPrediction, userMessages);
+
+if (!validation.schemaValid) {
+  console.log(`   ⚠️ Schema 校验失败: ${validation.schemaErrors.join("; ")}`);
+}
+
+if (!validation.evidenceGrounded) {
+  console.log(`   ⚠️ Evidence 未匹配: ${validation.unmatchedEvidence.join("; ")}`);
+}
+
+// 使用校验后的 prediction（如果有）
+const prediction = validation.prediction || rawPrediction;
 
       // 保存结果
       const result = {
-        caseId: caseItem.id,
-        gold: caseItem.gold,
-        prediction: prediction,
-        latency: latency,
-        success: true,
-      };
+  caseId: caseItem.id,
+  gold: caseItem.gold,
+  prediction: prediction,
+  latency: latency,
+  success: true,
+  // ===== 新增：校验信息 =====
+  schemaValid: validation.schemaValid,
+  schemaErrors: validation.schemaErrors,
+  evidenceGrounded: validation.evidenceGrounded,
+  unmatchedEvidence: validation.unmatchedEvidence,
+};
 
       results.push(result);
       successCount++;
@@ -85,16 +110,21 @@ async function batchEvaluate(
       );
 
     } catch (error) {
-      console.log(`   ❌ 失败: ${error}`);
-      results.push({
-        caseId: caseItem.id,
-        gold: caseItem.gold,
-        prediction: null,
-        success: false,
-        error: String(error),
-      });
-      failCount++;
-    }
+  console.log(`   ❌ 失败: ${error}`);
+  results.push({
+    caseId: caseItem.id,
+    gold: caseItem.gold,
+    prediction: null,
+    success: false,
+    error: String(error),
+    // ===== 新增：校验信息（失败时为空） =====
+    schemaValid: false,
+    schemaErrors: ["模型调用失败"],
+    evidenceGrounded: false,
+    unmatchedEvidence: [],
+  });
+  failCount++;
+}
 /*
     // 每处理5条，保存一次进度（防止中断丢失数据）
     if ((i + 1) % 5 === 0) {
@@ -143,3 +173,4 @@ if (import.meta.main) {
     process.exit(1);
   });
 }
+
