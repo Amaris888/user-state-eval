@@ -1,5 +1,5 @@
 import OpenAI from "openai";
-import { writeFileSync, mkdirSync } from "fs";
+import { writeFileSync, mkdirSync,readFileSync } from "fs";
 import { join } from "path";
 import type { Case } from "./schemas";
 import { MODEL_ID } from "./batch_eval";
@@ -47,6 +47,18 @@ export const models: Record<string, ModelConfig> = {
     model: "ep-20260825102240-q8rw6",
   },
 };
+
+// ========== 读取标签指南 ==========
+function loadLabelGuide(): string {
+  try {
+    const guidePath = join(process.cwd(), "LABEL_GUIDE.md");
+    const content = readFileSync(guidePath, "utf-8");
+    return content;
+  } catch (error) {
+    console.warn("⚠️ 未找到 LABEL_GUIDE.md，使用默认提示词");
+    return "";
+  }
+}
 
 // ========== 调用模型 ==========
 export async function callModel(
