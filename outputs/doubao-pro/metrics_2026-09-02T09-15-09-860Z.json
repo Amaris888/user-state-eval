@@ -1,0 +1,4565 @@
+{
+  "overall": {
+    "exact_match": 0.06,
+    "core_exact_match": 0.22666666666666666,
+    "total_samples": 150
+  },
+  "per_field": {
+    "emotion": {
+      "field": "emotion",
+      "accuracy": 0.6666666666666666,
+      "macro_precision": 0.6412969609780671,
+      "macro_recall": 0.5904761110433284,
+      "macro_f1": 0.5734563768209542,
+      "per_class": {
+        "positive": {
+          "accuracy": 0.9285714285714286,
+          "precision": 0.8125,
+          "recall": 0.9285714285714286,
+          "f1": 0.8666666666666666,
+          "support": 28
+        },
+        "calm": {
+          "accuracy": 0.3157894736842105,
+          "precision": 0.5454545454545454,
+          "recall": 0.3157894736842105,
+          "f1": 0.39999999999999997,
+          "support": 19
+        },
+        "sad": {
+          "accuracy": 0.7931034482758621,
+          "precision": 0.7666666666666667,
+          "recall": 0.7931034482758621,
+          "f1": 0.7796610169491527,
+          "support": 29
+        },
+        "anxious": {
+          "accuracy": 0.875,
+          "precision": 0.6086956521739131,
+          "recall": 0.875,
+          "f1": 0.717948717948718,
+          "support": 16
+        },
+        "angry": {
+          "accuracy": 0.25,
+          "precision": 1,
+          "recall": 0.25,
+          "f1": 0.4,
+          "support": 12
+        },
+        "frustrated": {
+          "accuracy": 0.6470588235294118,
+          "precision": 0.6470588235294118,
+          "recall": 0.6470588235294118,
+          "f1": 0.6470588235294118,
+          "support": 34
+        },
+        "mixed": {
+          "accuracy": 0.7142857142857143,
+          "precision": 0.4166666666666667,
+          "recall": 0.7142857142857143,
+          "f1": 0.5263157894736842,
+          "support": 7
+        },
+        "unclear": {
+          "accuracy": 0.2,
+          "precision": 0.3333333333333333,
+          "recall": 0.2,
+          "f1": 0.25,
+          "support": 5
+        }
+      },
+      "confusion_matrix": [
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "sad",
+          "gold": "angry"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "calm",
+          "gold": "calm"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "angry"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "calm",
+          "gold": "calm"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "mixed"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "calm"
+        },
+        {
+          "predicted": "calm",
+          "gold": "calm"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "calm"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "angry",
+          "gold": "angry"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "sad",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "mixed"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "calm",
+          "gold": "calm"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "calm",
+          "gold": "calm"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "calm",
+          "gold": "positive"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "mixed"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "angry"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "angry",
+          "gold": "angry"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "angry"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "calm",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "calm"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "angry",
+          "gold": "angry"
+        },
+        {
+          "predicted": "tired",
+          "gold": "calm"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "calm",
+          "gold": "calm"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "sad",
+          "gold": "calm"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "calm"
+        },
+        {
+          "predicted": "positive",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "sarcastic",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "positive",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "angry"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "angry"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "angry"
+        },
+        {
+          "predicted": "positive",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "positive",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "positive",
+          "gold": "sad"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "calm"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "calm"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "calm",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "mixed"
+        },
+        {
+          "predicted": "calm",
+          "gold": "sad"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "sad"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "sad",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "mixed"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "calm"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "positive"
+        },
+        {
+          "predicted": "positive",
+          "gold": "mixed"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "sad"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "calm",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "positive",
+          "gold": "positive"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "calm"
+        },
+        {
+          "predicted": "sad",
+          "gold": "calm"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "calm"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "calm"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "anxious"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "mixed"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "sad"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "angry"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "anxious",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "mixed",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "sad"
+        },
+        {
+          "predicted": "frustrated",
+          "gold": "frustrated"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "sad",
+          "gold": "angry"
+        },
+        {
+          "predicted": "sad",
+          "gold": "sad"
+        },
+        {
+          "predicted": "sad",
+          "gold": "frustrated"
+        }
+      ]
+    },
+    "energy": {
+      "field": "energy",
+      "accuracy": 0.7266666666666667,
+      "macro_precision": 0.5361607142857143,
+      "macro_recall": 0.5623403575989783,
+      "macro_f1": 0.5456700322078674,
+      "per_class": {
+        "low": {
+          "accuracy": 0.7407407407407407,
+          "precision": 0.8571428571428571,
+          "recall": 0.7407407407407407,
+          "f1": 0.794701986754967,
+          "support": 81
+        },
+        "normal": {
+          "accuracy": 0.75,
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.6666666666666665,
+          "support": 36
+        },
+        "high": {
+          "accuracy": 0.7586206896551724,
+          "precision": 0.6875,
+          "recall": 0.7586206896551724,
+          "f1": 0.7213114754098361,
+          "support": 29
+        },
+        "unclear": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        {
+          "predicted": "low",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "high",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "high"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "high",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "high",
+          "gold": "normal"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "high",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "normal"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "normal"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "normal"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "normal"
+        },
+        {
+          "predicted": "high",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "normal",
+          "gold": "high"
+        },
+        {
+          "predicted": "high",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "normal",
+          "gold": "high"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "high",
+          "gold": "high"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "normal",
+          "gold": "normal"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "high"
+        },
+        {
+          "predicted": "low",
+          "gold": "low"
+        },
+        {
+          "predicted": "low",
+          "gold": "high"
+        }
+      ]
+    },
+    "need": {
+      "field": "need",
+      "accuracy": 0.7133333333333334,
+      "macro_precision": 0.5599102312585459,
+      "macro_recall": 0.5004232804232804,
+      "macro_f1": 0.5140515169687814,
+      "per_class": {
+        "be_heard": {
+          "accuracy": 0.88,
+          "precision": 0.7415730337078652,
+          "recall": 0.88,
+          "f1": 0.8048780487804879,
+          "support": 75
+        },
+        "advice": {
+          "accuracy": 0.8666666666666667,
+          "precision": 0.8666666666666667,
+          "recall": 0.8666666666666667,
+          "f1": 0.8666666666666667,
+          "support": 15
+        },
+        "information": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "celebration": {
+          "accuracy": 0.65,
+          "precision": 0.8666666666666667,
+          "recall": 0.65,
+          "f1": 0.7428571428571429,
+          "support": 20
+        },
+        "reassurance": {
+          "accuracy": 0.3333333333333333,
+          "precision": 0.7142857142857143,
+          "recall": 0.3333333333333333,
+          "f1": 0.4545454545454545,
+          "support": 15
+        },
+        "companionship": {
+          "accuracy": 0.16666666666666666,
+          "precision": 0.4,
+          "recall": 0.16666666666666666,
+          "f1": 0.23529411764705882,
+          "support": 12
+        },
+        "space": {
+          "accuracy": 0.8571428571428571,
+          "precision": 0.75,
+          "recall": 0.8571428571428571,
+          "f1": 0.7999999999999999,
+          "support": 7
+        },
+        "action": {
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "support": 2
+        },
+        "unclear": {
+          "accuracy": 0.25,
+          "precision": 0.2,
+          "recall": 0.25,
+          "f1": 0.22222222222222224,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "space",
+          "gold": "space"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "reassurance",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "space",
+          "gold": "space"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "space",
+          "gold": "space"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "reassurance",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "help",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "companionship",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "reassurance",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "advice",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "advice",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "information",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "reassurance",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "rest",
+          "gold": "space"
+        },
+        {
+          "predicted": "companionship",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "companionship",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "action",
+          "gold": "action"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "companionship",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "space",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "action",
+          "gold": "advice"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "space",
+          "gold": "space"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "companionship"
+        },
+        {
+          "predicted": "reassurance",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "be_heard,advice",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "space",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "companionship",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "reassurance",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "celebration",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "celebration"
+        },
+        {
+          "predicted": "reassurance",
+          "gold": "action"
+        },
+        {
+          "predicted": "space",
+          "gold": "space"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "space",
+          "gold": "space"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "advice"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "reassurance"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "advice",
+          "gold": "advice"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        },
+        {
+          "predicted": "be_heard",
+          "gold": "be_heard"
+        }
+      ]
+    },
+    "adviceWanted": {
+      "field": "adviceWanted",
+      "accuracy": 0.5333333333333333,
+      "macro_precision": 0.6441358024691358,
+      "macro_recall": 0.5255869684899123,
+      "macro_f1": 0.5601051153708722,
+      "per_class": {
+        "yes": {
+          "accuracy": 0.5333333333333333,
+          "precision": 1,
+          "recall": 0.5333333333333333,
+          "f1": 0.6956521739130436,
+          "support": 30
+        },
+        "no": {
+          "accuracy": 0.46808510638297873,
+          "precision": 0.4074074074074074,
+          "recall": 0.46808510638297873,
+          "f1": 0.43564356435643564,
+          "support": 47
+        },
+        "unknown": {
+          "accuracy": 0.5753424657534246,
+          "precision": 0.525,
+          "recall": 0.5753424657534246,
+          "f1": 0.5490196078431373,
+          "support": 73
+        }
+      },
+      "confusion_matrix": [
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "no",
+          "gold": "yes"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "no",
+          "gold": "no"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "yes",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "no"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "yes"
+        },
+        {
+          "predicted": "no",
+          "gold": "unknown"
+        },
+        {
+          "predicted": "unknown",
+          "gold": "unknown"
+        }
+      ]
+    },
+    "engagement": {
+      "field": "engagement",
+      "accuracy": 0.6733333333333333,
+      "macro_precision": 0.45740740740740743,
+      "macro_recall": 0.38903508771929823,
+      "macro_f1": 0.38597175771088815,
+      "per_class": {
+        "open": {
+          "accuracy": 0.9894736842105263,
+          "precision": 0.6962962962962963,
+          "recall": 0.9894736842105263,
+          "f1": 0.8173913043478261,
+          "support": 95
+        },
+        "limited": {
+          "accuracy": 0.06666666666666667,
+          "precision": 0.3333333333333333,
+          "recall": 0.06666666666666667,
+          "f1": 0.1111111111111111,
+          "support": 45
+        },
+        "withdrawn": {
+          "accuracy": 0.5,
+          "precision": 0.8,
+          "recall": 0.5,
+          "f1": 0.6153846153846154,
+          "support": 8
+        },
+        "unclear": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 2
+        }
+      },
+      "confusion_matrix": [
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "withdrawn",
+          "gold": "withdrawn"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "withdrawn",
+          "gold": "withdrawn"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "limited",
+          "gold": "withdrawn"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "withdrawn",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "limited",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "limited",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "limited",
+          "gold": "withdrawn"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "unclear",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "limited",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "limited",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "withdrawn",
+          "gold": "withdrawn"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "limited",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "withdrawn",
+          "gold": "withdrawn"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "limited",
+          "gold": "withdrawn"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "limited",
+          "gold": "withdrawn"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "limited"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        },
+        {
+          "predicted": "open",
+          "gold": "open"
+        }
+      ]
+    },
+    "riskLevel": {
+      "field": "riskLevel",
+      "accuracy": 0.7066666666666667,
+      "macro_precision": 0.578125,
+      "macro_recall": 0.5436507936507937,
+      "macro_f1": 0.487136086662153,
+      "per_class": {
+        "none": {
+          "accuracy": 0.6746031746031746,
+          "precision": 1,
+          "recall": 0.6746031746031746,
+          "f1": 0.8056872037914692,
+          "support": 126
+        },
+        "watch": {
+          "accuracy": 1,
+          "precision": 0.3125,
+          "recall": 1,
+          "f1": 0.47619047619047616,
+          "support": 20
+        },
+        "urgent": {
+          "accuracy": 0.5,
+          "precision": 1,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 2
+        },
+        "unclear": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 2
+        }
+      },
+      "confusion_matrix": [
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "urgent",
+          "gold": "urgent"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "watch",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "unclear"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "urgent"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "watch",
+          "gold": "watch"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        },
+        {
+          "predicted": "none",
+          "gold": "none"
+        },
+        {
+          "predicted": "watch",
+          "gold": "none"
+        }
+      ]
+    }
+  },
+  "risk": {
+    "urgent_recall": 0.5,
+    "urgent_precision": 0.5,
+    "urgent_f1": 0.5,
+    "risk_recall": 1,
+    "risk_precision": 1,
+    "risk_f1": 1,
+    "risk_false_positive_rate": 0.3253968253968254,
+    "per_risk_level": {
+      "none": {
+        "accuracy": 0.6746031746031746,
+        "precision": 1,
+        "recall": 0.6746031746031746,
+        "f1": 0.8056872037914692,
+        "support": 126
+      },
+      "watch": {
+        "accuracy": 1,
+        "precision": 0.3125,
+        "recall": 1,
+        "f1": 0.47619047619047616,
+        "support": 20
+      },
+      "urgent": {
+        "accuracy": 0.5,
+        "precision": 1,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 2
+      },
+      "unclear": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "support": 2
+      }
+    },
+    "confusion_matrix": [
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "urgent",
+        "gold": "urgent"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "watch",
+        "gold": "unclear"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "unclear"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "urgent"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "watch",
+        "gold": "watch"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      },
+      {
+        "predicted": "none",
+        "gold": "none"
+      },
+      {
+        "predicted": "watch",
+        "gold": "none"
+      }
+    ]
+  },
+  "evidence": {
+    "grounded_rate": 0.6533333333333333,
+    "avg_evidence_count": 2.6133333333333333,
+    "empty_evidence_count": 0,
+    "total_evidence_count": 392,
+    "unmatched_evidence_count": 89
+  },
+  "latency": {
+    "p50_ms": 1902,
+    "p90_ms": 2243,
+    "p95_ms": 2375,
+    "p99_ms": 2786,
+    "min_ms": 1454,
+    "max_ms": 2889,
+    "avg_ms": 1935.3533333333332,
+    "count": 150
+  },
+  "schema": {
+    "json_success_rate": 1,
+    "schema_pass_rate": 0.9733333333333334,
+    "schema_errors": {
+      "need: Invalid option: expected one of \"be_heard\"|\"advice\"|\"information\"|\"celebration\"|\"reassurance\"|\"companionship\"|\"space\"|\"action\"|\"unclear\"": 3,
+      "emotion: Invalid option: expected one of \"positive\"|\"calm\"|\"sad\"|\"anxious\"|\"angry\"|\"frustrated\"|\"mixed\"|\"unclear\"": 2
+    }
+  }
+}

@@ -135,7 +135,7 @@ if (import.meta.main) {
   const args = process.argv.slice(2);
   const options: CliOptions = {
     dataset: "./datasets/dev.jsonl",
-    model: "qwen-plus",
+    model: "doubao-pro",
   };
 
   for (let i = 0; i < args.length; i++) {
