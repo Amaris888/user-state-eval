@@ -107,9 +107,18 @@ function calculateMacroMetrics(
     return { precision: 0, recall: 0, f1: 0 };
   }
   
-  const totalPrecision = classes.reduce((sum, c) => sum + classMetrics[c].precision, 0);
-  const totalRecall = classes.reduce((sum, c) => sum + classMetrics[c].recall, 0);
-  const totalF1 = classes.reduce((sum, c) => sum + classMetrics[c].f1, 0);
+  const totalPrecision = classes.reduce((sum, c) => {
+  const metric = classMetrics[c];
+  return sum + (metric ? metric.precision : 0);
+}, 0);
+const totalRecall = classes.reduce((sum, c) => {
+  const metric = classMetrics[c];
+  return sum + (metric ? metric.recall : 0);
+}, 0);
+const totalF1 = classes.reduce((sum, c) => {
+  const metric = classMetrics[c];
+  return sum + (metric ? metric.f1 : 0);
+}, 0);
   return {
     precision: totalPrecision / classes.length,
     recall: totalRecall / classes.length,
@@ -136,33 +145,33 @@ export function calculateFieldMetrics(
 
   // 统计
   for (let i = 0; i < n; i++) {
-    const gold = golds[i];
-    const pred = predictions[i];
+   const gold = golds[i] || "unknown";
+const pred = predictions[i] || "unknown";
 
-    // 如果 gold 不在枚举中，跳过
-    if (!classStats[gold]) {
-      classStats[gold] = { tp: 0, fp: 0, fn: 0, support: 0 };
-    }
-    if (!classStats[pred]) {
-      classStats[pred] = { tp: 0, fp: 0, fn: 0, support: 0 };
-    }
+if (!classStats[gold]) {
+  classStats[gold] = { tp: 0, fp: 0, fn: 0, support: 0 };
+}
+if (!classStats[pred]) {
+  classStats[pred] = { tp: 0, fp: 0, fn: 0, support: 0 };
+}
 
-    // 使用非空断言（因为上面已经确保存在）
-    const goldStats = classStats[gold]!;
-    goldStats.support++;
+const goldStats = classStats[gold];
+if (!goldStats) continue;
+goldStats.support++;
 
-    confusion.push({ predicted: pred, gold: gold });
+confusion.push({ predicted: pred, gold: gold });
 
-    if (pred === gold) {
-      correct++;
-      goldStats.tp++;
-    } else {
-      const predStats = classStats[pred]!;
-      predStats.fp++;
-      goldStats.fn++;
-    }
+if (pred === gold) {
+  correct++;
+  goldStats.tp++;
+} else {
+  const predStats = classStats[pred];
+  if (predStats) {
+    predStats.fp++;
   }
-
+  goldStats.fn++;
+}
+  }
   // 计算每个类别的指标
   const perClass: Record<string, ClassificationMetrics> = {};
   allPossibleLabels.forEach(label => {
@@ -448,14 +457,15 @@ export function calculateAllMetrics(
   // 计算每个字段的指标
   const perField: Record<string, FieldMetrics> = {};
   for (const field of fields) {
-    const golds = validResults.map(r => r.gold[field]);
-    const preds = validResults.map(r => r.prediction[field]);
-    perField[field] = calculateFieldMetrics(
-      golds,
-      preds,
-      field,
-      fieldLabels[field]
-    );
+    const golds = validResults.map(r => r.gold[field] || "unknown");
+const preds = validResults.map(r => r.prediction[field] || "unknown");
+    const labels = fieldLabels[field] || [];
+perField[field] = calculateFieldMetrics(
+  golds,
+  preds,
+  field,
+  labels
+);
   }
 
   // 计算整体指标
