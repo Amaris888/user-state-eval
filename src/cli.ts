@@ -135,7 +135,7 @@ if (import.meta.main) {
   const args = process.argv.slice(2);
   const options: CliOptions = {
     dataset: "./datasets/dev.jsonl",
-    model: "doubao-pro",
+    model: "deepseek-v4-pro",
   };
 
   for (let i = 0; i < args.length; i++) {

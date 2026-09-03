@@ -1,0 +1,355 @@
+{
+  "overall": {
+    "exact_match": 0,
+    "core_exact_match": 0,
+    "total_samples": 0
+  },
+  "per_field": {
+    "emotion": {
+      "field": "emotion",
+      "accuracy": 0,
+      "macro_precision": 0,
+      "macro_recall": 0,
+      "macro_f1": 0,
+      "per_class": {
+        "positive": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "calm": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "sad": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "anxious": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "angry": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "frustrated": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "mixed": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "unclear": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        }
+      },
+      "confusion_matrix": []
+    },
+    "energy": {
+      "field": "energy",
+      "accuracy": 0,
+      "macro_precision": 0,
+      "macro_recall": 0,
+      "macro_f1": 0,
+      "per_class": {
+        "low": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "normal": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "high": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "unclear": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        }
+      },
+      "confusion_matrix": []
+    },
+    "need": {
+      "field": "need",
+      "accuracy": 0,
+      "macro_precision": 0,
+      "macro_recall": 0,
+      "macro_f1": 0,
+      "per_class": {
+        "be_heard": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "advice": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "information": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "celebration": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "reassurance": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "companionship": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "space": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "action": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "unclear": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        }
+      },
+      "confusion_matrix": []
+    },
+    "adviceWanted": {
+      "field": "adviceWanted",
+      "accuracy": 0,
+      "macro_precision": 0,
+      "macro_recall": 0,
+      "macro_f1": 0,
+      "per_class": {
+        "yes": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "no": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "unknown": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        }
+      },
+      "confusion_matrix": []
+    },
+    "engagement": {
+      "field": "engagement",
+      "accuracy": 0,
+      "macro_precision": 0,
+      "macro_recall": 0,
+      "macro_f1": 0,
+      "per_class": {
+        "open": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "limited": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "withdrawn": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "unclear": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        }
+      },
+      "confusion_matrix": []
+    },
+    "riskLevel": {
+      "field": "riskLevel",
+      "accuracy": 0,
+      "macro_precision": 0,
+      "macro_recall": 0,
+      "macro_f1": 0,
+      "per_class": {
+        "none": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "watch": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "urgent": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        },
+        "unclear": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 0
+        }
+      },
+      "confusion_matrix": []
+    }
+  },
+  "risk": {
+    "urgent_recall": 0,
+    "urgent_precision": 0,
+    "urgent_f1": 0,
+    "risk_recall": 0,
+    "risk_precision": 0,
+    "risk_f1": 0,
+    "risk_false_positive_rate": 0,
+    "per_risk_level": {
+      "none": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "support": 0
+      },
+      "watch": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "support": 0
+      },
+      "urgent": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "support": 0
+      },
+      "unclear": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "support": 0
+      }
+    },
+    "confusion_matrix": []
+  },
+  "evidence": {
+    "grounded_rate": 0,
+    "avg_evidence_count": 0,
+    "empty_evidence_count": 0,
+    "total_evidence_count": 0,
+    "unmatched_evidence_count": 0
+  },
+  "latency": {
+    "p50_ms": 0,
+    "p90_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "min_ms": 0,
+    "max_ms": 0,
+    "avg_ms": 0,
+    "count": 0
+  },
+  "schema": {
+    "json_success_rate": 0,
+    "schema_pass_rate": 0,
+    "schema_errors": {}
+  }
+}
